@@ -1,0 +1,30 @@
+[
+  {
+    "id": "81ffc05c-04b4-4a12-85a0-27e4af863860",
+    "user_id": "4",
+    "username": "jasminbinda",
+    "first_name": "Jasmin",
+    "last_name": "Binda",
+    "email": "hello_jas@mail.com",
+    "subject": "test",
+    "message": "test\n\ntest\n\n test\ntest",
+    "file_path": null,
+    "status": "open",
+    "created_at": "2025-12-21T15:58:59.595739",
+    "updated_at": "2025-12-21T15:58:59.595746"
+  },
+  {
+    "id": "42ab35ef-d3a5-4bbf-bdc0-b4c3445910cc",
+    "user_id": "3",
+    "username": "jamalbinda",
+    "first_name": "Jamal",
+    "last_name": "Binda",
+    "email": "hello_jamal@mail.com",
+    "subject": "test",
+    "message": "That fixes both Pylance and runtime issues.\nSince the import is working, we can now safely rewrite the donation consumer with proper deduplication, idempotency, and multi-instance safety.\n\nDo you want me to go ahead and do that?",
+    "file_path": "data/uploads/42ab35ef-d3a5-4bbf-bdc0-b4c3445910cc_kit_logo.png",
+    "status": "open",
+    "created_at": "2025-12-26T21:49:06.087927",
+    "updated_at": "2025-12-26T21:49:06.087940"
+  }
+]

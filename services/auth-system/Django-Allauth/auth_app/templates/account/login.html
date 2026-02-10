@@ -1,0 +1,127 @@
+<!-- File: auth_app/templates/account/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign in with Google — PaulKeys</title>
+  <style>
+    body { font-family: Arial, sans-serif; display:flex; align-items:center; justify-content:center; min-height:100vh; background:#f7f7f7; margin:0; }
+    .card { background:#fff; padding:28px; border-radius:10px; box-shadow:0 6px 24px rgba(0,0,0,0.08); width:360px; max-width:95%; text-align:center; }
+    h1{font-size:20px;margin:0 0 12px}
+    p{color:#555;margin:0 0 18px}
+    pre { text-align:left; max-height:160px; overflow:auto; background:#f1f1f1; padding:10px; border-radius:6px; }
+    .spinner{display:none;margin:12px auto 0}
+    .success{color:green}
+    .error{color:#c0392b}
+    .small{font-size:13px;color:#666;margin-top:12px}
+    .btn { margin-top:14px; padding:10px 14px; border-radius:6px; border:0; background:#1976d2; color:#fff; cursor:pointer; font-weight:600; }
+  </style>
+  <!-- Google Identity Services -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script>
+    // CONFIG: set your Google client id here
+    const GOOGLE_CLIENT_ID = "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com";
+
+    // API base for backend
+    const API_URL = "/api";
+
+    // Called by GSI when credential is returned
+    async function handleCredentialResponse(response) {
+      // response.credential is the ID token (JWT)
+      const idToken = response.credential;
+      document.getElementById('login-result').textContent = "Submitting token to server...";
+      document.getElementById('spinner').style.display = 'block';
+
+      try {
+        const res = await fetch(`${API_URL}/social-login/google/`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          credentials: 'include', // IMPORTANT: allow session cookie to be set/used
+          body: JSON.stringify({ access_token: idToken })
+        });
+
+        const data = await res.json();
+        document.getElementById('spinner').style.display = 'none';
+
+        if (res.ok && data.success) {
+          document.getElementById('login-result').textContent = JSON.stringify(data, null, 2);
+          document.getElementById('login-result').className = 'success';
+          // Redirect to app page (adjust as desired)
+          setTimeout(() => { window.location.href = "/test-auth/"; }, 700);
+        } else {
+          document.getElementById('login-result').textContent = JSON.stringify(data, null, 2);
+          document.getElementById('login-result').className = 'error';
+          // Show the GSI button again so user can retry
+          googlePrompt();
+        }
+      } catch (err) {
+        document.getElementById('spinner').style.display = 'none';
+        document.getElementById('login-result').textContent = 'Network / server error: ' + String(err);
+        document.getElementById('login-result').className = 'error';
+        googlePrompt();
+      }
+    }
+
+    function googlePrompt() {
+      // render the button after any errors or initial load
+      // button container cleared and re-rendered
+      const container = document.getElementById('g-id-button');
+      container.innerHTML = '';
+      google.accounts.id.renderButton(
+        container,
+        { theme: 'outline', size: 'large', width: 300 }  // customization
+      );
+      // optionally show the one-tap prompt
+      // google.accounts.id.prompt();
+    }
+
+    function init() {
+      if (!GOOGLE_CLIENT_ID || GOOGLE_CLIENT_ID.includes('YOUR_GOOGLE_CLIENT_ID')) {
+        document.getElementById('login-result').textContent = '⚠️ Set GOOGLE_CLIENT_ID in the template before using.';
+        document.getElementById('login-result').className = 'error';
+        return;
+      }
+
+      window.handleCredentialResponse = handleCredentialResponse; // expose for GSI
+
+      google.accounts.id.initialize({
+        client_id: GOOGLE_CLIENT_ID,
+        callback: handleCredentialResponse,
+        ux_mode: 'popup' // keep popup flow
+      });
+
+      // render button
+      googlePrompt();
+    }
+
+    // initialize after GSI script loads
+    window.addEventListener('load', () => {
+      // wait a tiny bit if GSI script isn't ready
+      setTimeout(init, 250);
+    });
+  </script>
+</head>
+<body>
+  <div class="card" role="main">
+    <h1>Sign in with Google</h1>
+    <p>Use your Google account to sign in. You will be redirected after a successful login.</p>
+
+    <!-- Google button (rendered by GSI) -->
+    <div id="g-id-button" style="display:flex;justify-content:center;"></div>
+
+    <div class="spinner" id="spinner">Processing…</div>
+
+    <!-- debug/result area -->
+    <pre id="login-result"></pre>
+
+    <div class="small">
+      If you want a standard username/password sign-in, open <code>/test-auth/</code>.
+    </div>
+
+    <button class="btn" onclick="window.location.href='/test-auth/'" style="margin-top:12px">Open Test Auth Page</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "sessions": {
+    "jjns7eknuvgz19o99w1g0tnzimouloxb": {
+      "session_id": "jjns7eknuvgz19o99w1g0tnzimouloxb",
+      "user_id": 3,
+      "user": {
+        "id": 3,
+        "email": "hello_jamal@mail.com",
+        "username": "jamalbinda",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "sdjx439tecao7uv5e0hcm3ww47y830qo": {
+      "session_id": "sdjx439tecao7uv5e0hcm3ww47y830qo",
+      "user_id": 4,
+      "user": {
+        "id": 4,
+        "email": "hello_jas@mail.com",
+        "username": "jasminbinda",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    }
+  },
+  "user_sessions": {
+    "4": [
+      "sdjx439tecao7uv5e0hcm3ww47y830qo"
+    ],
+    "3": [
+      "jjns7eknuvgz19o99w1g0tnzimouloxb"
+    ]
+  }
+}

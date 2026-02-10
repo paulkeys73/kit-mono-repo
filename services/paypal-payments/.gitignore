@@ -1,0 +1,16 @@
+
+!.env.example
+# Env
+# Node
+# OS / IDE
+# Python
+*.pyc
+.DS_Store
+.env
+.env.*
+.vscode/
+__pycache__/
+node_modules/
+npm-debug.log*
+venv/
+yarn-error.log*

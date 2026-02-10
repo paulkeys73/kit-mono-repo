@@ -1,0 +1,17 @@
+{
+  "event": "donation.stats.snapshot",
+  "payload": {
+    "id": 1,
+    "currency": "USD",
+    "today_date": "2025-12-26",
+    "today_total": 2850.0,
+    "today_count": 7,
+    "month": "2025-12",
+    "monthly_target": 15000.0,
+    "monthly_total": 2850.0,
+    "monthly_count": 7,
+    "percent": 19.0,
+    "remaining": 12150.0,
+    "updated_at": "2025-12-26T17:29:59.846784+00:00"
+  }
+}

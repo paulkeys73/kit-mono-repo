@@ -1,0 +1,24 @@
+services:
+  db-server:
+    container_name: db-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: db-server:latest
+    restart: unless-stopped
+    environment:
+      DB_HOST: app_postgres
+      DB_PORT: 5432
+      DB_USER: kit
+      DB_PASSWORD: admin123Pw
+      DB_NAME: knightindustrytech
+    ports:
+      - "8011:8011"
+      - "8012:8012"
+    networks:
+      - db-server-net
+
+networks:
+  db-server-net:
+    external: true
+    name: db-server_default

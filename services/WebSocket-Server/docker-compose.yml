@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  websocket-server:
+    container_name: websocket-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: websocket-server:latest
+    restart: unless-stopped
+    ports:
+      - "8009:8009"   # Main WS
+      - "8008:8008"   # Donation Stats WS
+    networks:
+      - db-server-net
+
+networks:
+  db-server-net:
+    external: true
+    name: db-server_default
