@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  alert-server:
+    container_name: alert-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: alert-server:latest
+    restart: unless-stopped
+    ports:
+      - "8099:8099"
+    networks:
+      - db-server-net
+
+networks:
+  db-server-net:
+    external: true
+    name: db-server_default

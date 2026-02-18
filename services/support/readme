@@ -1,0 +1,168 @@
+#!/bin/bash
+set -Eeuo pipefail
+
+# -------------------------------
+# Usage: ./backend-nginx.sh dev|stage|prod
+# -------------------------------
+
+ENV_NAME="${1:-}"
+if [[ -z "$ENV_NAME" ]]; then
+  echo "[❌] Missing environment argument! Usage: $0 dev|stage|prod"
+  exit 1
+fi
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ENV_FILE="$SCRIPT_DIR/../swarm/env/.env.$ENV_NAME"
+
+if [[ ! -f "$ENV_FILE" ]]; then
+    echo "[❌] Environment file $ENV_FILE not found!"
+    exit 1
+fi
+
+echo "[ℹ️] Loading environment from $ENV_FILE"
+set -a
+source "$ENV_FILE"
+set +a
+
+CONF_DIR="$SCRIPT_DIR/backend_conf"
+UPSTREAM_CONF="$SCRIPT_DIR/upstream/server_block.conf"
+REMOTE_CONF_DIR="/etc/nginx/conf.d"
+FINAL_CONF="/tmp/$Domain.conf"
+
+echo "[⚙️] Building nginx config locally: $FINAL_CONF"
+
+# ---------------------------
+# Step 0: Special handling for hostall.site
+# ---------------------------
+if [[ "$Domain" == "hostall.site" ]]; then
+cat <<EOF > "$FINAL_CONF"
+# ==========================
+# HTTP -> HTTPS redirect & ACME for $Domain
+# ==========================
+server {
+    listen 80;
+    listen [::]:80;
+    server_name $Domain www.$Domain;
+
+    # ACME challenge path
+    location /.well-known/acme-challenge/ {
+        root /var/www/html;
+    }
+
+    # All other traffic -> HTTPS
+    location / {
+        return 301 https://\$host\$request_uri;
+    }
+}
+
+# ==========================
+# HTTPS server block
+# ==========================
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name $Domain www.$Domain;
+
+    ssl_certificate /etc/letsencrypt/live/$Domain/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/$Domain/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+    root /var/www/html;
+EOF
+else
+# For other domains, just start normal server block
+sed -e 's/\r$//' \
+    -e "s/{{BACKEND_IP}}/$BACKEND_IP/g" \
+    -e "s/{{Domain}}/$Domain/g" \
+    "$UPSTREAM_CONF" > "$FINAL_CONF"
+fi
+
+# ---------------------------
+# Step 1: Append all dynamic stack location blocks
+# ---------------------------
+for template in "$CONF_DIR"/*.conf; do
+    if [[ -f "$template" ]]; then
+        sed -e 's/\r$//' -e "s/{{BACKEND_IP}}/$BACKEND_IP/g" "$template" >> "$FINAL_CONF"
+        echo "" >> "$FINAL_CONF"
+    fi
+done
+
+# ---------------------------
+# Step 2: Add static location block
+# ---------------------------
+cat <<EOF >> "$FINAL_CONF"
+
+    # ==========================
+    # Static Assets
+    # ==========================
+    location /static/ {
+        alias /app/static/;
+        autoindex on;
+    }
+
+EOF
+
+# ---------------------------
+# Step 3: Close server block
+# ---------------------------
+echo "}" >> "$FINAL_CONF"
+
+# ---------------------------
+# Step 4: Upload and reload nginx
+# ---------------------------
+echo "[📤] Uploading config to $BACKEND_IP:$REMOTE_CONF_DIR/$Domain.conf"
+sshpass -p "$BACKEND_PASS" scp -o StrictHostKeyChecking=no "$FINAL_CONF" \
+    $BACKEND_USER@$BACKEND_IP:$REMOTE_CONF_DIR/$Domain.conf
+
+rm -f "$FINAL_CONF"
+
+sshpass -p "$BACKEND_PASS" ssh -o StrictHostKeyChecking=no $BACKEND_USER@$BACKEND_IP "
+    echo '[🔍] Testing nginx configuration...'
+    nginx -t
+    if [ \$? -eq 0 ]; then
+        echo '[✅] Nginx config test passed. Reloading...'
+        systemctl reload nginx
+    else
+        echo '[❌] Nginx config test failed! Check /var/log/nginx/error.log'
+        exit 1
+    fi
+"
+
+echo "[🚀] Deployment complete. Services reachable at https://$Domain/"
+
+
+
+
+
+cat /etc/nginx/conf.d/hostall.site.conf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+source venv/bin/activate
+python3 -m uvicorn main:app --host 0.0.0.0 --port 8099 --reload

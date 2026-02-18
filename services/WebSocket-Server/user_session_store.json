@@ -1,0 +1,60 @@
+{
+  "4": {
+    "user_id": 4,
+    "session_id": "ysiz7obesf0ph9z9up02e30mvffycjg2",
+    "profile": {
+      "id": 4,
+      "username": "jasminbinda",
+      "full_name": "Jasmin Binda",
+      "first_name": "Jasmin",
+      "last_name": "Binda",
+      "email": "hello_jas@mail.com",
+      "phone": "+995558115396",
+      "bio": "Welcome to my profile!",
+      "location": "Localhost",
+      "country": "Georgia",
+      "address": "4 shalva gogidze street",
+      "state": "Tbilisi",
+      "city": "Digomi",
+      "postal_code": "0102",
+      "facebook_url": "https://www.facebook.com/official.paulkeys",
+      "x_url": "https://x.com/PaulKeys17",
+      "linkedin_url": "https://www.linkedin.com/in/wordpress-developer-full-stack-dev/",
+      "instagram_url": "https://www.instagram.com/paul_keys_music_dev",
+      "avatar": "profile_images/avatars/jasmin_binda_buNDeD.svg",
+      "is_authenticated": true,
+      "is_staff": false,
+      "is_superuser": false
+    },
+    "meta": {}
+  },
+  "3": {
+    "user_id": 3,
+    "session_id": "jjns7eknuvgz19o99w1g0tnzimouloxb",
+    "profile": {
+      "id": 3,
+      "username": "jamalbinda",
+      "full_name": "Jamal Binda",
+      "first_name": "Jamal",
+      "last_name": "Binda",
+      "email": "hello_jamal@mail.com",
+      "phone": "+995558115396",
+      "bio": "Welcome to my profile!",
+      "location": "Localhost",
+      "country": "Georgia",
+      "address": "4 shalva gogidze street",
+      "state": "Tbilisi",
+      "city": "Digomi",
+      "postal_code": "0102",
+      "facebook_url": "https://www.facebook.com/official.paulkeys",
+      "x_url": "https://x.com/PaulKeys17",
+      "linkedin_url": "https://www.linkedin.com/in/wordpress-developer-full-stack-dev/",
+      "instagram_url": "https://www.instagram.com/paul_keys_music_dev",
+      "avatar": "profile_images/avatars/jamal_binda_gCbwNQ.svg",
+      "is_authenticated": true,
+      "is_staff": false,
+      "is_superuser": false
+    },
+    "meta": {}
+  }
+}

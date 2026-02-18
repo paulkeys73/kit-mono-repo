@@ -1,0 +1,14 @@
+services:
+  dbeaver:
+    image: dbeaver/cloudbeaver:23.1.2
+    container_name: dbeaver_gui
+    restart: unless-stopped
+    ports:
+      - "8978:8978"   # web UI
+    volumes:
+      - dbeaver_data:/opt/cloudbeaver/workspace   # persist settings
+    environment:
+      CB_SERVER_MODE: "true"   # ensures web mode
+
+volumes:
+  dbeaver_data:

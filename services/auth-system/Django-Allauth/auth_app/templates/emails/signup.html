@@ -1,0 +1,32 @@
+{% extends "email_base.html" %}
+
+{% block title %}Welcome to PaulKeys Tech{% endblock %}
+
+{% block header %}Welcome to PaulKeys Tech{% endblock %}
+
+{% block content %}
+<p>Hi {{ username }},</p>
+
+<p>Thank you for signing up! Please verify your email to activate your account:</p>
+
+<p>
+  <a href="{{ confirm_link }}" style="
+      display:inline-block;
+      background:linear-gradient(135deg,#0b72ff,#00c2ff);
+      color:#fff;
+      font-weight:600;
+      padding:12px 20px;
+      border-radius:8px;
+      text-decoration:none;
+      font-family: Inter, system-ui, sans-serif;
+      ">
+    Confirm Email
+  </a>
+</p>
+
+<p>If you did not sign up, please ignore this email.</p>
+
+<p style="margin-top:20px; font-size:12px; color:#6b7280;">
+© PaulKeys Tech. All rights reserved.
+</p>
+{% endblock %}

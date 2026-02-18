@@ -1,0 +1,14 @@
+2026-02-18 04:53:21,866 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 1000, 'currency': 'USD', 'user_id': 4, 'username': 'jasminbinda', 'first_name': 'Jasmin', 'last_name': 'Binda', 'email': 'hello_jas@mail.com'}
+2026-02-18 04:53:22,010 | INFO | [RESPONSE] POST /orders/create-order | Status: 200 | Body: {'id': '0CV122365T735470M', 'status': 'CREATED', 'links': [{'href': 'https://api.sandbox.paypal.com/v2/checkout/orders/0CV122365T735470M', 'rel': 'self', 'method': 'GET'}, {'href': 'https://www.sandbox.paypal.com/checkoutnow?token=0CV122365T735470M', 'rel': 'approve', 'method': 'GET'}, {'href': 'https://api.sandbox.paypal.com/v2/checkout/orders/0CV122365T735470M', 'rel': 'update', 'method': 'PATCH'}, {'href': 'https://api.sandbox.paypal.com/v2/checkout/orders/0CV122365T735470M/capture', 'rel': 'capture', 'method': 'POST'}]}
+2026-02-18 05:53:58,300 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 1500, 'currency': 'USD', 'user_id': 4, 'username': 'jasminbinda', 'first_name': 'Jasmin', 'last_name': 'Binda', 'email': 'hello_jas@mail.com'}
+2026-02-18 06:02:58,617 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 2000, 'currency': 'USD', 'user_id': 4, 'username': 'jasminbinda', 'first_name': 'Jasmin', 'last_name': 'Binda', 'email': 'hello_jas@mail.com'}
+2026-02-18 06:07:44,171 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 2500, 'currency': 'USD', 'user_id': 4, 'username': 'jasminbinda', 'first_name': 'Jasmin', 'last_name': 'Binda', 'email': 'hello_jas@mail.com'}
+2026-02-18 06:07:44,271 | ERROR | [ERROR] POST /orders/create-order | Exception: name 'logger' is not defined
+2026-02-18 06:11:33,240 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 2500, 'currency': 'USD', 'user_id': 4, 'username': 'jasminbinda', 'first_name': 'Jasmin', 'last_name': 'Binda', 'email': 'hello_jas@mail.com'}
+2026-02-18 06:11:33,241 | INFO | PayPal order created | Order ID: 2RU96919831586647 | Amount: 2500.0 USD
+2026-02-18 06:11:33,326 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 2RU96919831586647
+2026-02-18 06:11:33,326 | INFO | Create order response sent | Order ID: 2RU96919831586647
+2026-02-18 06:14:08,912 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 3000, 'currency': 'USD', 'user_id': 4, 'username': 'jasminbinda', 'first_name': 'Jasmin', 'last_name': 'Binda', 'email': 'hello_jas@mail.com'}
+2026-02-18 06:14:08,912 | INFO | PayPal order created | Order ID: 3LP08734Y00367948 | Amount: 3000.0 USD
+2026-02-18 06:14:08,991 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 3LP08734Y00367948
+2026-02-18 06:14:08,992 | INFO | Create order response sent | Order ID: 3LP08734Y00367948
