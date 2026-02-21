@@ -1,7 +1,7 @@
 import asyncio
 import json
 import aio_pika
-from threading import Thread
+from threading import Thread, Event
 import uuid
 from datetime import datetime, timezone, timedelta
 from auth_app import events
@@ -16,9 +16,6 @@ QUEUE_BINDINGS = {
     "all_events_queue": "#",
 }
 
-# -----------------------------
-# DEFAULT EVENT SCHEMA
-# -----------------------------
 DEFAULT_EVENT_PAYLOAD = {
     "event": None,
     "timestamp": None,
@@ -29,8 +26,11 @@ DEFAULT_EVENT_PAYLOAD = {
     "profile": None,
     "jwt": {"access": None, "refresh": None},
     "expires_at": None,
-    "state": None,  # active | logged_out | expired
+    "state": None,
+    "email": None,
+    "code": None,
 }
+
 
 class RabbitPublisher:
     def __init__(self):
@@ -42,8 +42,8 @@ class RabbitPublisher:
         self.channel = None
         self.exchange = None
         self.queues = {}
+        self.ready_event = Event()
 
-        # Connect asynchronously
         asyncio.run_coroutine_threadsafe(self._connect(), self.loop)
         self._hook_auth_events()
 
@@ -55,7 +55,6 @@ class RabbitPublisher:
         try:
             self.connection = await aio_pika.connect_robust(RABBITMQ_URL)
             self.channel = await self.connection.channel(publisher_confirms=True)
-
             self.exchange = await self.channel.declare_exchange(
                 EXCHANGE_NAME, EXCHANGE_TYPE, durable=True
             )
@@ -66,30 +65,25 @@ class RabbitPublisher:
                 self.queues[queue_name] = queue
 
             print(f"🐇 RabbitMQ ready | exchange='{EXCHANGE_NAME}' | queues={list(self.queues)}")
+            self.ready_event.set()
         except Exception as e:
             print(f"❌ RabbitMQ connection error: {e}")
 
-    # -----------------------------
-    # PAYLOAD NORMALIZATION
-    # -----------------------------
     def _normalize_payload(self, payload: dict) -> dict:
-        normalized = json.loads(json.dumps(DEFAULT_EVENT_PAYLOAD))  # deep copy
+        normalized = json.loads(json.dumps(DEFAULT_EVENT_PAYLOAD))
         normalized.update(payload)
 
         normalized["event"] = normalized.get("event") or "unknown.event"
         normalized["timestamp"] = normalized.get("timestamp") or datetime.now(timezone.utc).isoformat()
         normalized["correlation_id"] = normalized.get("correlation_id") or str(uuid.uuid4())
 
-        # Normalize JWT
         if normalized.get("jwt") is None:
             normalized["jwt"] = {"access": None, "refresh": None}
         else:
             normalized["jwt"].setdefault("access", None)
             normalized["jwt"].setdefault("refresh", None)
 
-        # Set TTL for session snapshots if not set
-        if normalized["event"] == "auth.session.snapshot" and "expires_at" not in normalized:
-            # Default TTL 24h
+        if normalized["event"] == "auth.session.snapshot" and not normalized.get("expires_at"):
             expires_at = datetime.now(timezone.utc) + timedelta(hours=24)
             normalized["expires_at"] = expires_at.isoformat()
             normalized["state"] = normalized.get("state") or "active"
@@ -98,53 +92,54 @@ class RabbitPublisher:
 
     async def publish_async(self, payload: dict):
         try:
+            if not self.exchange:
+                raise RuntimeError("RabbitMQ exchange not ready")
+
             payload = self._normalize_payload(payload)
             message = aio_pika.Message(
                 body=json.dumps(payload).encode(),
                 delivery_mode=aio_pika.DeliveryMode.PERSISTENT,
             )
             await self.exchange.publish(message, routing_key=payload["event"])
-            print(f"✅ Published | {payload['event']} | user_id={payload['user_id']}")
+            print(f"✅ Published | {payload['event']} | user_id={payload.get('user_id')}")
         except Exception as e:
             print(f"❌ publish_async failed: {e}")
 
     def publish(self, payload: dict):
         try:
+            if not self.ready_event.wait(timeout=5):
+                print("❌ RabbitMQ not ready — publish skipped")
+                return
             future = asyncio.run_coroutine_threadsafe(self.publish_async(payload), self.loop)
             return future.result()
         except Exception as e:
             print(f"❌ publish failed: {e}")
 
-    # -----------------------------
-    # AUTO-HOOK AUTH EVENTS
-    # -----------------------------
     def _hook_auth_events(self):
-        for attr in dir(events):
+        """Auto-wrap emit_* functions to publish events, except passwordless_code_sent"""
+        from auth_app import events as events_module
+
+        for attr in dir(events_module):
             if not attr.startswith("emit_"):
                 continue
 
-            original_fn = getattr(events, attr)
+            # Skip emit_passwordless_code_sent to prevent double publishing
+            if attr == "emit_passwordless_code_sent":
+                continue
+
+            original_fn = getattr(events_module, attr)
             if not callable(original_fn):
                 continue
 
             def wrapper(*args, _fn=original_fn, _name=attr, **kwargs):
                 result = _fn(*args, **kwargs)
-
-                # Build event payload dynamically
-                payload = {
-                    "event": _name.replace("emit_", "auth."),
-                    "user_id": args[0] if len(args) > 0 else None,
-                    "session_id": args[1] if len(args) > 1 else None,
-                    "profile": args[2] if len(args) > 2 else None,
-                    "jwt": args[3] if len(args) > 3 else None,
-                }
-
-                # Publish safely
+                payload = kwargs.copy()
+                payload["event"] = _name.replace("emit_", "auth.")
                 self.publish(payload)
                 return result
 
-            setattr(events, attr, wrapper)
+            setattr(events_module, attr, wrapper)
 
 
-# Singleton
+# Singleton instance
 rabbit_publisher = RabbitPublisher()

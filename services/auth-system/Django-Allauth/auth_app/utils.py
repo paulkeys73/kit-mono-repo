@@ -1,7 +1,14 @@
 # auth_app/utils.py
+# auth_app/utils.py
 import io
+from datetime import timedelta
 from django.utils.crypto import get_random_string
+from django.utils import timezone
 
+from auth_app.events import emit_passwordless_code_sent
+
+
+# ----------------- SVG AVATAR -----------------
 def generate_initials_avatar_svg(full_name: str, size=256):
     """
     Generate a simple SVG avatar with initials.
@@ -21,3 +28,22 @@ def generate_initials_avatar_svg(full_name: str, size=256):
     filename = f"avatars/{full_name.replace(' ', '_').lower()}_{get_random_string(6)}.svg"
 
     return filename, buffer
+
+
+# ----------------- PASSWORDLESS CODE -----------------
+def send_passwordless_code(user):
+    """
+    Create a new verification code for the user and emit an event.
+    Invalidates any previous codes automatically via EmailVerification.create_for_user.
+    Returns the EmailVerification instance.
+    """
+    # Deferred import to avoid circular dependency
+    from auth_app.models import EmailVerification
+
+    verification = EmailVerification.create_for_user(user)
+    emit_passwordless_code_sent(
+        user_id=user.id,
+        email=user.email,
+        expires_at=verification.expires_at.isoformat()
+    )
+    return verification

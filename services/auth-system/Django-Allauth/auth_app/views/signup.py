@@ -1,27 +1,32 @@
-import json
+# auth_app/views/signup.py
+# auth_app/views/signup.py
 
-from django.conf import settings
-from django.core.mail import send_mail
-from django.core.files.base import ContentFile
-from django.http import JsonResponse, HttpResponse
-from django.utils import timezone
+import json
+from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.db import transaction
-from django.shortcuts import redirect
-from django.template.loader import render_to_string
-
-from allauth.account.models import EmailAddress, EmailConfirmation
+from django.utils import timezone
+from allauth.account.models import EmailAddress
 
 from auth_app.models import CustomUser
+from auth_app.events import (
+    emit_user_created,
+    emit_passwordless_code_sent,
+)
 from auth_app.utils import generate_initials_avatar_svg
-from auth_app.events import emit, AUTH_USER_CREATED
+from auth_app.views.request_code import send_verification_code
 
 
-# -------------------------------------------------
-# SIGNUPs
-# --------------------------------------------------
 @csrf_exempt
 def signup_api(request):
+    """
+    Unified signup endpoint.
+
+    - If user exists and NOT verified → resend verification code
+    - If user exists and verified → block
+    - If new user → create + send verification code
+    """
+
     if request.method != "POST":
         return JsonResponse({"error": "POST required"}, status=405)
 
@@ -31,176 +36,149 @@ def signup_api(request):
         first_name = payload.get("first_name", "").strip()
         last_name = payload.get("last_name", "").strip()
         email = payload.get("email", "").strip().lower()
-        password = payload.get("password", "")
-        confirm_password = payload.get("confirm_password", "")
         username = payload.get("username", "").strip()
+        password = payload.get("password", "").strip()
+        confirm_password = payload.get("confirm_password", "").strip()
 
-        # ----------------- VALIDATION -----------------
-        if not all([first_name, last_name, email, password, confirm_password]):
-            return JsonResponse({"error": "All fields are required"}, status=400)
+        if not email:
+            return JsonResponse({"error": "Email required"}, status=400)
 
-        if password != confirm_password:
-            return JsonResponse({"error": "Passwords do not match"}, status=400)
+        if password:
+            if not first_name or not last_name:
+                return JsonResponse(
+                    {"error": "First name and last name required for password signup"},
+                    status=400,
+                )
+            if password != confirm_password:
+                return JsonResponse({"error": "Passwords do not match"}, status=400)
 
-        if CustomUser.objects.filter(email=email).exists():
-            return JsonResponse({"error": "Email already in use"}, status=400)
+        # -----------------------------------------
+        # EXISTING USER LOGIC
+        # -----------------------------------------
+        existing_user = CustomUser.objects.filter(email=email).first()
 
-        # Auto-generate username
+        if existing_user:
+            email_record = EmailAddress.objects.filter(
+                user=existing_user, email=email
+            ).first()
+
+            if email_record and not email_record.verified:
+                # Account exists but not verified → resend code
+                verification = send_verification_code(existing_user)
+
+                emit_passwordless_code_sent(
+                    user_id=existing_user.id,
+                    email=existing_user.email,
+                    expires_at=verification.expires_at.isoformat(),
+                )
+
+                return JsonResponse(
+                    {
+                        "message": "Account exists but not verified. Verification code resent.",
+                        "user": {
+                            "id": existing_user.id,
+                            "username": existing_user.username,
+                            "email": existing_user.email,
+                            "fullName": existing_user.full_name,
+                        },
+                        "expires_at": verification.expires_at.isoformat(),
+                    },
+                    status=200,
+                )
+
+            # Already verified → block duplicate signup
+            return JsonResponse(
+                {"error": "Email already registered and verified. Please login."},
+                status=400,
+            )
+
+        # -----------------------------------------
+        # USERNAME AUTO-GENERATION
+        # -----------------------------------------
         if not username:
-            base = f"{first_name}{last_name}".lower()
+            if first_name and last_name:
+                base = f"{first_name}{last_name}".lower()
+            else:
+                base = email.split("@")[0]
+
             username = base
             counter = 1
+
             while CustomUser.objects.filter(username=username).exists():
                 username = f"{base}{counter}"
                 counter += 1
 
-        # ----------------- DEFAULT FIELDS -----------------
-        defaults = {
-            "phone": payload.get("phone", "+995558115396"),
-            "bio": payload.get("bio", "Welcome to my profile!"),
-            "location": payload.get("location", "Georgia"),
-            "address": payload.get("address", "4 shalva gogidze street"),
-            "city": payload.get("city", "Digomi"),
-            "state": payload.get("state", "Tbilisi"),
-            "postal_code": payload.get("postal_code", "0102"),
-            "country": payload.get("country", "Georgia"),
+        elif CustomUser.objects.filter(username=username).exists():
+            return JsonResponse({"error": "Username already in use"}, status=400)
 
-            "facebook_url": payload.get("facebook", "https://www.facebook.com/official.paulkeys"),
-            "x_url": payload.get("x", "https://x.com/PaulKeys17"),
-            "linkedin_url": payload.get(
-                "linkedin",
-                "https://www.linkedin.com/in/wordpress-developer-full-stack-dev/"
-            ),
-            "instagram_url": payload.get(
-                "instagram",
-                "https://www.instagram.com/paul_keys_music_dev"
-            ),
-        }
-
-        # ----------------- CREATE USER -----------------
+        # -----------------------------------------
+        # CREATE USER (INACTIVE UNTIL VERIFIED)
+        # -----------------------------------------
         with transaction.atomic():
-            user = CustomUser.objects.create_user(
+
+            user = CustomUser.objects.create(
                 username=username,
                 email=email,
-                password=password,
                 first_name=first_name,
                 last_name=last_name,
-                **defaults
+                is_active=False,  # critical
             )
 
-            # Avatar
-            if "profile_image" in request.FILES:
-                user.profile_image = request.FILES["profile_image"]
-            elif not user.profile_image:
-                filename, buffer = generate_initials_avatar_svg(user.full_name)
-                user.profile_image.save(
-                    filename,
-                    ContentFile(buffer.getvalue()),
-                    save=False
-                )
+            if password:
+                user.set_password(password)
+                method = "password"
+            else:
+                user.set_unusable_password()
+                method = "passwordless"
 
             user.save()
 
-            # ----------------- EMAIL VERIFICATION -----------------
-            email_address = EmailAddress.objects.create(
+            EmailAddress.objects.update_or_create(
                 user=user,
                 email=email,
-                primary=True,
-                verified=False
+                defaults={
+                    "primary": True,
+                    "verified": False,
+                },
             )
 
-            confirmation = EmailConfirmation.create(email_address)
-            confirmation.sent = timezone.now()
-            confirmation.save()
+            # Optional avatar generation
+            if first_name and last_name and not user.profile_image:
+                filename, buffer = generate_initials_avatar_svg(user.full_name)
+                user.profile_image.save(filename, buffer.getvalue())
 
-        confirm_link = request.build_absolute_uri(
-            f"/verify-email/{confirmation.key}/"
+        # -----------------------------------------
+        # SEND VERIFICATION CODE
+        # -----------------------------------------
+        verification = send_verification_code(user)
+
+        emit_passwordless_code_sent(
+            user_id=user.id,
+            email=user.email,
+            expires_at=verification.expires_at.isoformat(),
         )
 
-        send_mail(
-            subject="Verify your email",
-            message=f"Hi {user.username}, verify your account:\n{confirm_link}",
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=[email],
-            fail_silently=False,
-        )
-
-        # ----------------- EVENT BUS -----------------
-        emit(
-            AUTH_USER_CREATED,
-            {
-                "user_id": user.id,
-                "username": user.username,
-                "email": user.email,
-                "full_name": user.full_name,
-                "country": user.country,
-                "city": user.city,
-                "timestamp": timezone.now().isoformat(),
-            }
+        emit_user_created(
+            user_id=user.id,
+            username=user.username,
+            email=user.email,
+            full_name=user.full_name,
+            method=method,
         )
 
         return JsonResponse(
             {
-                "message": "Signup successful. Verification email sent.",
+                "message": "Signup successful. Verification code sent.",
                 "user": {
                     "id": user.id,
                     "username": user.username,
                     "email": user.email,
                     "fullName": user.full_name,
-                    "avatar": user.profile_image.url if user.profile_image else None,
                 },
+                "expires_at": verification.expires_at.isoformat(),
             },
             status=201,
         )
 
     except Exception as e:
         return JsonResponse({"error": str(e)}, status=500)
-
-
-# --------------------------------------------------
-# EMAIL CONFIRMATION CALLBACK
-# --------------------------------------------------
-def email_confirmed_view(request, key):
-    try:
-        confirmation = EmailConfirmation.objects.get(key=key)
-        confirmation.confirm(request)
-
-        return redirect(settings.LOGIN_REDIRECT_URL)
-
-    except EmailConfirmation.DoesNotExist:
-        return HttpResponse("Invalid or expired confirmation link", status=400)
-
-
-# --------------------------------------------------
-# RESEND ACTIVATION EMAIL
-# --------------------------------------------------
-@csrf_exempt
-def resend_activation_email(request):
-    if request.method != "POST":
-        return JsonResponse({"error": "POST required"}, status=405)
-
-    payload = json.loads(request.body)
-    email = payload.get("email", "").strip().lower()
-
-    try:
-        email_address = EmailAddress.objects.get(email=email, verified=False)
-
-        confirmation = EmailConfirmation.create(email_address)
-        confirmation.sent = timezone.now()
-        confirmation.save()
-
-        confirm_link = request.build_absolute_uri(
-            f"/verify-email/{confirmation.key}/"
-        )
-
-        send_mail(
-            subject="Verify your email",
-            message=f"Verify your account:\n{confirm_link}",
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=[email],
-        )
-
-        return JsonResponse({"message": "Verification email resent"})
-
-    except EmailAddress.DoesNotExist:
-        return JsonResponse({"error": "No unverified email found"}, status=404)

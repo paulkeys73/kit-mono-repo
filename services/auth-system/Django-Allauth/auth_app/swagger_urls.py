@@ -1,267 +1,234 @@
+import uuid
+import json
 from django.urls import path, re_path
+from django.contrib.auth import get_user_model, login, get_backends
+from django.core.files.base import ContentFile
+from django.utils.crypto import get_random_string
+from django.core.mail import send_mail
+from django.conf import settings
 from rest_framework import permissions, serializers
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework.response import Response
+from rest_framework_simplejwt.tokens import RefreshToken
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
-from django.contrib.auth import authenticate, get_user_model
-from django.contrib.auth.tokens import default_token_generator
-from django.utils.http import urlsafe_base64_encode
-from django.utils.encoding import force_bytes
-from django.core.mail import send_mail
-from django.conf import settings
+from auth_app.utils import generate_initials_avatar_svg
+from auth_app.events import (
+    emit,
+    emit_session_snapshot,
+    AUTH_PASSWORD_LOGIN_SUCCESS,
+)
 
 User = get_user_model()
 
 # ---------------------------
 # Serializers
 # ---------------------------
-class SignupSerializer(serializers.Serializer):
-    username = serializers.CharField()
-    email = serializers.EmailField()
-    password1 = serializers.CharField(write_only=True)
-    password2 = serializers.CharField(write_only=True)
-
-class LoginSerializer(serializers.Serializer):
-    username = serializers.CharField()
-    password = serializers.CharField(write_only=True)
 
 class EmailSerializer(serializers.Serializer):
     email = serializers.EmailField()
 
+class VerifyCodeSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+    code = serializers.CharField()
+
 class UserProfileSerializer(serializers.ModelSerializer):
     fullName = serializers.SerializerMethodField()
-    avatar = serializers.SerializerMethodField()
-    verified = serializers.SerializerMethodField()
-    social = serializers.SerializerMethodField()
-
-    bio = serializers.CharField(default="No bio available", allow_blank=True)
-    location = serializers.CharField(default="Unknown location", allow_blank=True)
-    phone_number = serializers.CharField(source='phone', default="", allow_blank=True)
-    street_address = serializers.CharField(source='address', default="", allow_blank=True)
-    country = serializers.CharField(default="", allow_blank=True)
-    city = serializers.CharField(default="", allow_blank=True)
-    state_province = serializers.CharField(source='state', default="", allow_blank=True)
-    postal_code = serializers.CharField(default="", allow_blank=True)
 
     class Meta:
         model = User
-        fields = [
-            "id", "username", "email", "first_name", "last_name",
-            "fullName", "avatar", "bio", "location",
-            "verified", "is_staff", "is_superuser",
-            "phone_number", "country", "street_address", "city", "state_province", "postal_code",
-            "social"
-        ]
+        fields = ["id", "username", "email", "first_name", "last_name", "fullName", "profile_image"]
 
     def get_fullName(self, obj):
         return f"{obj.first_name} {obj.last_name}".strip() or obj.username
 
-    def get_avatar(self, obj):
-        try:
-            if obj.profile_image and hasattr(obj.profile_image, "url"):
-                return obj.profile_image.url
-        except Exception:
-            pass
-        return "https://via.placeholder.com/128"
+# ---------------------------
+# In-memory code store (replace with Redis in prod)
+# ---------------------------
 
-    def get_verified(self, obj):
-        try:
-            from allauth.account.models import EmailAddress
-            email_record = EmailAddress.objects.get(user=obj, primary=True)
-            return email_record.verified
-        except Exception:
-            return False
-
-    def get_social(self, obj):
-        return {
-            "facebook": getattr(obj, "facebook_url", "") or "",
-            "x": getattr(obj, "x_url", "") or "",
-            "linkedin": getattr(obj, "linkedin_url", "") or "",
-            "instagram": getattr(obj, "instagram_url", "") or ""
-        }
-
+PASSWORDLESS_CODES = {}
 
 # ---------------------------
-# Stateless API Endpoints
+# Passwordless: Request Code
 # ---------------------------
-@swagger_auto_schema(method='post', operation_summary="Signup", request_body=SignupSerializer)
+
+@swagger_auto_schema(method='post', operation_summary="Request Login Code", request_body=EmailSerializer)
 @api_view(['POST'])
 @permission_classes([permissions.AllowAny])
 @authentication_classes([])
-def api_signup(request):
-    data = request.data
-    username = data.get("username")
-    email = data.get("email")
-    password1 = data.get("password1")
-    password2 = data.get("password2")
-
-    if not all([username, email, password1, password2]):
-        return Response({"success": False, "error": "All fields are required."}, status=400)
-    if password1 != password2:
-        return Response({"success": False, "error": "Passwords do not match."}, status=400)
-    if User.objects.filter(username=username).exists():
-        return Response({"success": False, "error": "Username already exists."}, status=400)
-    if User.objects.filter(email=email).exists():
-        return Response({"success": False, "error": "Email already exists."}, status=400)
-
-    user = User.objects.create_user(username=username, email=email, password=password1)
-    uid = urlsafe_base64_encode(force_bytes(user.pk))
-    token = default_token_generator.make_token(user)
-    verify_link = f"{request.build_absolute_uri('/api/verify-email/')}?uid={uid}&token={token}"
-    send_mail(
-        subject="Verify your email",
-        message=f"Click here to verify your email: {verify_link}",
-        from_email=settings.DEFAULT_FROM_EMAIL,
-        recipient_list=[user.email],
-        fail_silently=True
-    )
-    return Response({"success": True, "message": "User created successfully. Verification email sent."}, status=201)
-
-@swagger_auto_schema(method='post', operation_summary="Login (Stateless)", request_body=LoginSerializer)
-@api_view(['POST'])
-@permission_classes([permissions.AllowAny])
-@authentication_classes([])
-def api_login(request):
-    data = request.data
-    username = data.get("username")
-    password = data.get("password")
-
-    user = authenticate(request, username=username, password=password)
-    if not user:
-        return Response({"success": False, "error": "Invalid credentials."}, status=401)
-
-    serializer = UserProfileSerializer(user)
-    return Response({
-        "success": True,
-        "status": "logged_in",
-        "message": f"Login successful.",
-        "ip": request.META.get("REMOTE_ADDR"),
-        "location": "Localhost",
-        "user": serializer.data
-    }, status=200)
-
-@swagger_auto_schema(method='post', operation_summary="Logout (Stateless)")
-@api_view(['POST'])
-@permission_classes([permissions.AllowAny])
-@authentication_classes([])
-def api_logout(request):
-    return Response({"success": True, "message": "Stateless logout successful. Nothing to clear."}, status=200)
-
-@swagger_auto_schema(method='get', operation_summary="Check Session Status")
-@api_view(['GET'])
-@permission_classes([permissions.AllowAny])
-def api_session(request):
-    if request.user.is_authenticated:
-        return Response({
-            "success": True,
-            "is_authenticated": True,
-            "status": "active",
-            "user": {
-                "username": request.user.username,
-                "email": request.user.email,
-            }
-        })
-    return Response({
-        "success": True,
-        "is_authenticated": False,
-        "status": "inactive"
-    })
-
-@swagger_auto_schema(method='get', operation_summary="Get Profile", responses={200: UserProfileSerializer()})
-@api_view(['GET'])
-@permission_classes([permissions.AllowAny])
-def api_profile(request):
-    username = request.query_params.get("username")
-    user = None
-
-    # Fetch by username or current session
-    if username:
-        try:
-            user = User.objects.get(username=username)
-        except User.DoesNotExist:
-            return Response({"success": False, "error": "User not found."}, status=404)
-    elif request.user.is_authenticated:
-        user = request.user
-    else:
-        return Response({"success": False, "error": "Provide ?username=<username> or authenticate first."}, status=400)
-
-    serializer = UserProfileSerializer(user)
-    return Response({"authenticated": True, "user": serializer.data}, status=200)
-
-
-@swagger_auto_schema(method='post', operation_summary="Reset Password Request", request_body=EmailSerializer)
-@api_view(['POST'])
-@permission_classes([permissions.AllowAny])
-@authentication_classes([])
-def api_reset_password(request):
+def api_request_code(request):
     email = request.data.get("email")
     if not email:
         return Response({"success": False, "error": "Email required."}, status=400)
-    try:
-        user = User.objects.get(email=email)
-    except User.DoesNotExist:
-        return Response({"success": True, "message": "Password reset email sent."})
 
-    uid = urlsafe_base64_encode(force_bytes(user.pk))
-    token = default_token_generator.make_token(user)
-    reset_link = f"{request.build_absolute_uri('/api/reset-password-confirm/')}?uid={uid}&token={token}"
+    user, created = User.objects.get_or_create(
+        email=email.lower(),
+        defaults={"username": email.split("@")[0]}
+    )
+
+    code = get_random_string(6, allowed_chars="0123456789")
+    PASSWORDLESS_CODES[email] = code
+
     send_mail(
-        subject="Password Reset Request",
-        message=f"Reset your password here: {reset_link}",
+        subject="Your Login Code",
+        message=f"Your verification code is: {code}",
         from_email=settings.DEFAULT_FROM_EMAIL,
-        recipient_list=[user.email],
+        recipient_list=[email],
         fail_silently=True
     )
-    return Response({"success": True, "message": "Password reset email sent."}, status=200)
 
-@swagger_auto_schema(method='post', operation_summary="Resend Verification Email", request_body=EmailSerializer)
+    return Response({"success": True, "message": "Verification code sent."}, status=200)
+
+# ---------------------------
+# Passwordless: Verify Code + JWT + Full Auth Flow
+# ---------------------------
+
+@swagger_auto_schema(method='post', operation_summary="Verify Login Code", request_body=VerifyCodeSerializer)
 @api_view(['POST'])
 @permission_classes([permissions.AllowAny])
 @authentication_classes([])
-def api_resend_activation(request):
-    email = request.data.get("email")
-    if not email:
-        return Response({"success": False, "error": "Email required."}, status=400)
+def api_verify_code(request):
+    email = request.data.get("email", "").lower()
+    code = request.data.get("code", "").strip()
+    correlation_id = str(uuid.uuid4())
+
+    if not email or not code:
+        return Response({"success": False, "error": "Email and code required."}, status=400)
+
+    stored_code = PASSWORDLESS_CODES.get(email)
+    if not stored_code or stored_code != code:
+        return Response({"success": False, "error": "Invalid or expired code."}, status=401)
+
     try:
         user = User.objects.get(email=email)
     except User.DoesNotExist:
         return Response({"success": False, "error": "User not found."}, status=404)
 
-    uid = urlsafe_base64_encode(force_bytes(user.pk))
-    token = default_token_generator.make_token(user)
-    verify_link = f"{request.build_absolute_uri('/api/verify-email/')}?uid={uid}&token={token}"
-    send_mail(
-        subject="Verify Your Email",
-        message=f"Click here to verify your email: {verify_link}",
-        from_email=settings.DEFAULT_FROM_EMAIL,
-        recipient_list=[user.email],
-        fail_silently=True
+    # Remove used code
+    PASSWORDLESS_CODES.pop(email, None)
+
+    # Activate user if not active
+    if not user.is_active:
+        user.is_active = True
+        user.save(update_fields=["is_active"])
+
+    # Auto-generate avatar if missing
+    full_name = f"{user.first_name} {user.last_name}".strip() or user.username
+    if not getattr(user, "profile_image", None):
+        filename, buffer = generate_initials_avatar_svg(full_name)
+        user.profile_image.save(filename, ContentFile(buffer.getvalue()))
+        user.save()
+
+    # Assign backend explicitly
+    backends = get_backends()
+    if not backends:
+        return Response({"success": False, "error": "No authentication backends configured."}, status=500)
+
+    user.backend = f"{backends[0].__module__}.{backends[0].__class__.__name__}"
+    login(request, user)
+    session_token = request.session.session_key
+
+    # JWT tokens
+    refresh = RefreshToken.for_user(user)
+    jwt_tokens = {"access": str(refresh.access_token), "refresh": str(refresh)}
+
+    # User payload
+    user_data = {
+        "id": user.id,
+        "username": user.username,
+        "email": user.email,
+        "fullName": full_name,
+        "avatar": user.profile_image.url if getattr(user, "profile_image", None) else None,
+        "is_authenticated": True,
+    }
+
+    # Emit login event
+    emit(
+        AUTH_PASSWORD_LOGIN_SUCCESS,
+        {
+            "user_id": user.id,
+            "session_token": session_token,
+            "jwt": jwt_tokens,
+            "profile": user_data,
+        },
     )
-    return Response({"success": True, "message": "Verification email resent."}, status=200)
+
+    # Emit session snapshot
+    emit_session_snapshot(
+        user_id=user.id,
+        session_id=session_token,
+        profile=user_data,
+        jwt=jwt_tokens,
+        expires_at=request.session.get_expiry_date().isoformat(),
+        state="active",
+    )
+
+    serializer = UserProfileSerializer(user)
+    return Response({
+        "success": True,
+        "status": "logged_in",
+        "user": serializer.data,
+        "session_token": session_token,
+        "jwt": jwt_tokens,
+        "correlation_id": correlation_id
+    }, status=200)
+
+# ---------------------------
+# Logout
+# ---------------------------
+
+@swagger_auto_schema(method='post', operation_summary="Logout")
+@api_view(['POST'])
+def api_logout(request):
+    request.session.flush()
+    return Response({"success": True, "message": "Logged out."})
+
+# ---------------------------
+# Session Status
+# ---------------------------
+
+@swagger_auto_schema(method='get', operation_summary="Check Session Status")
+@api_view(['GET'])
+def api_session(request):
+    if request.user.is_authenticated:
+        return Response({
+            "success": True,
+            "is_authenticated": True,
+            "email": request.user.email
+        })
+    return Response({"success": True, "is_authenticated": False})
+
+# ---------------------------
+# Profile
+# ---------------------------
+
+@swagger_auto_schema(method='get', operation_summary="Get Profile", responses={200: UserProfileSerializer()})
+@api_view(['GET'])
+def api_profile(request):
+    if not request.user.is_authenticated:
+        return Response({"success": False, "error": "Not authenticated."}, status=401)
+
+    serializer = UserProfileSerializer(request.user)
+    return Response(serializer.data)
 
 # ---------------------------
 # Swagger Schema View
 # ---------------------------
+
 schema_view = get_schema_view(
     openapi.Info(
-        title="PaulKeys Auth API (Stateless)",
-        default_version='v1',
+        title="PaulKeys Auth API (Passwordless)",
+        default_version='v1.1',
         description="""
-## 🔐 PaulKeys Stateless Auth API
-Lightweight, CSRF-free, and session-aware authentication system.
+## 🔐 PaulKeys Passwordless Auth API
 
-### Available Endpoints
-| Endpoint | Method | Description |
-|-----------|--------|-------------|
-| `/api/signup/` | POST | Register new user |
-| `/api/login/` | POST | Stateless login |
-| `/api/logout/` | POST | Stateless logout |
-| `/api/session/` | GET | Check current session |
-| `/api/profile/` | GET | Fetch full profile of authenticated user or ?username=<username> |
-| `/api/reset-password/` | POST | Send reset password email |
-| `/api/resend-activation/` | POST | Resend email verification |
+Email-based authentication with 6-digit verification codes.
+
+### Flow
+1. POST `/api/request-code/`
+2. POST `/api/verify-code/` → returns JWT + login
+3. Session becomes authenticated
         """,
         contact=openapi.Contact(email="admin@paulkeys.dev"),
     ),
@@ -272,19 +239,18 @@ Lightweight, CSRF-free, and session-aware authentication system.
 # ---------------------------
 # URL Patterns
 # ---------------------------
+
 urlpatterns = [
-    # Swagger Documentation
+    # Swagger
     re_path(r'^swagger/?$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     re_path(r'^swagger/index.html$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-index'),
     re_path(r'^redoc/?$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
 
-    # Stateless API Endpoints
-    path('api/signup/', api_signup, name='api-signup'),
-    path('api/login/', api_login, name='api-login'),
+    # Passwordless API
+    path('api/request-code/', api_request_code, name='api-request-code'),
+    path('api/verify-code/', api_verify_code, name='api-verify-code'),
     path('api/logout/', api_logout, name='api-logout'),
     path('api/session/', api_session, name='api-session'),
     path('api/profile/', api_profile, name='api-profile'),
-    path('api/reset-password/', api_reset_password, name='api-reset-password'),
-    path('api/resend-activation/', api_resend_activation, name='api-resend-activation'),
 ]
