@@ -1,0 +1,1702 @@
+[
+  {
+    "id": 8114446762058,
+    "title": "Everyday Earbuds Plus",
+    "body_html": "All-day wired earbuds with built-in microphone and volume control for versatile listening anywhere.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:19:41+04:00",
+    "handle": "everyday-earbuds-plus",
+    "updated_at": "2026-01-28T06:19:41+04:00",
+    "published_at": "2026-01-28T06:19:41+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114446762058",
+    "variants": [
+      {
+        "id": 43264902365258,
+        "product_id": 8114446762058,
+        "title": "Everyday Earbuds Plus",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Everyday Earbuds Plus",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:19:41+04:00",
+        "updated_at": "2026-01-28T06:19:41+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084361802,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902365258",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555096650,
+        "product_id": 8114446762058,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Everyday Earbuds Plus"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047656095818,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114446762058,
+        "created_at": "2026-01-28T06:19:41+04:00",
+        "updated_at": "2026-01-28T06:19:41+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501079114",
+        "width": 1024,
+        "height": 1024,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/E26_PUR_IMG1.png?v=1769566781",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047656095818,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114446762058,
+      "created_at": "2026-01-28T06:19:41+04:00",
+      "updated_at": "2026-01-28T06:19:41+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501079114",
+      "width": 1024,
+      "height": 1024,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/E26_PUR_IMG1.png?v=1769566781",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114446794826,
+    "title": "Pillowcase - White - Queen",
+    "body_html": "Handmade queen-size silk pillowcase crafted from 22 momme pure mulberry silk for a hypoallergenic, luxurious sleep experience.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:19:43+04:00",
+    "handle": "pillowcase-white-queen",
+    "updated_at": "2026-01-28T06:19:44+04:00",
+    "published_at": "2026-01-28T06:19:43+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114446794826",
+    "variants": [
+      {
+        "id": 43264902398026,
+        "product_id": 8114446794826,
+        "title": "Pillowcase - White - Queen",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Pillowcase - White - Queen",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:19:44+04:00",
+        "updated_at": "2026-01-28T06:19:44+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084394570,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902398026",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555129418,
+        "product_id": 8114446794826,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Pillowcase - White - Queen"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047656259658,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114446794826,
+        "created_at": "2026-01-28T06:19:44+04:00",
+        "updated_at": "2026-01-28T06:19:44+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501111882",
+        "width": 1000,
+        "height": 1000,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/blissy-silk-pillowcase-queen-white-main.jpg?v=1769566784",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047656259658,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114446794826,
+      "created_at": "2026-01-28T06:19:44+04:00",
+      "updated_at": "2026-01-28T06:19:44+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501111882",
+      "width": 1000,
+      "height": 1000,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/blissy-silk-pillowcase-queen-white-main.jpg?v=1769566784",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114446827594,
+    "title": "d'Alba White Truffle First Spray Serum 100ml",
+    "body_html": "A lightweight spray serum infused with white truffle extract and niacinamide for instant hydration, brightening, and a radiant glow.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:19:47+04:00",
+    "handle": "dalba-white-truffle-first-spray-serum-100ml",
+    "updated_at": "2026-01-28T06:19:47+04:00",
+    "published_at": "2026-01-28T06:19:47+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114446827594",
+    "variants": [
+      {
+        "id": 43264902463562,
+        "product_id": 8114446827594,
+        "title": "d'Alba White Truffle First Spray Serum 100ml",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "d'Alba White Truffle First Spray Serum 100ml",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:19:47+04:00",
+        "updated_at": "2026-01-28T06:19:47+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084460106,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902463562",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555162186,
+        "product_id": 8114446827594,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "d'Alba White Truffle First Spray Serum 100ml"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047656325194,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114446827594,
+        "created_at": "2026-01-28T06:19:47+04:00",
+        "updated_at": "2026-01-28T06:19:47+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501144650",
+        "width": 600,
+        "height": 600,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/D_albaWhiteTruffleFirstSpraySerum100ml_600x_7fbe53fb-9be4-4228-ab11-4db15016e8e9.webp?v=1769566787",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047656325194,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114446827594,
+      "created_at": "2026-01-28T06:19:47+04:00",
+      "updated_at": "2026-01-28T06:19:47+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501144650",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/D_albaWhiteTruffleFirstSpraySerum100ml_600x_7fbe53fb-9be4-4228-ab11-4db15016e8e9.webp?v=1769566787",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114446860362,
+    "title": "TBT® Serum (Anti-Aging Serum)",
+    "body_html": "A hydrating, leave-on exfoliant serum with mandelic acid, niacinamide, and resveratrol to reduce fine lines, wrinkles, and dark spots for youthful, brightened skin.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:19:53+04:00",
+    "handle": "tbt®-serum-anti-aging-serum",
+    "updated_at": "2026-01-28T06:19:53+04:00",
+    "published_at": "2026-01-28T06:19:53+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114446860362",
+    "variants": [
+      {
+        "id": 43264902496330,
+        "product_id": 8114446860362,
+        "title": "TBT® Serum (Anti-Aging Serum)",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "TBT® Serum (Anti-Aging Serum)",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:19:53+04:00",
+        "updated_at": "2026-01-28T06:19:53+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084492874,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902496330",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555194954,
+        "product_id": 8114446860362,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "TBT® Serum (Anti-Aging Serum)"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047656489034,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114446860362,
+        "created_at": "2026-01-28T06:19:53+04:00",
+        "updated_at": "2026-01-28T06:19:53+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501177418",
+        "width": 2000,
+        "height": 2000,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/TBT_Serum_01.png?v=1769566793",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047656489034,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114446860362,
+      "created_at": "2026-01-28T06:19:53+04:00",
+      "updated_at": "2026-01-28T06:19:53+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501177418",
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/TBT_Serum_01.png?v=1769566793",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114446893130,
+    "title": "Bundle: Two Sans Air Purifier Minis",
+    "body_html": "Compact air purifier minis designed to control dust, odors, and allergens in large rooms.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:19:55+04:00",
+    "handle": "bundle-two-sans-air-purifier-minis",
+    "updated_at": "2026-01-28T06:19:56+04:00",
+    "published_at": "2026-01-28T06:19:55+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114446893130",
+    "variants": [
+      {
+        "id": 43264902529098,
+        "product_id": 8114446893130,
+        "title": "Bundle: Two Sans Air Purifier Minis",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Bundle: Two Sans Air Purifier Minis",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:19:56+04:00",
+        "updated_at": "2026-01-28T06:19:56+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084525642,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902529098",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555227722,
+        "product_id": 8114446893130,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Bundle: Two Sans Air Purifier Minis"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047656554570,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114446893130,
+        "created_at": "2026-01-28T06:19:56+04:00",
+        "updated_at": "2026-01-28T06:19:56+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501210186",
+        "width": 850,
+        "height": 850,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/bundle_two_minis_1.png?v=1769566796",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047656554570,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114446893130,
+      "created_at": "2026-01-28T06:19:56+04:00",
+      "updated_at": "2026-01-28T06:19:56+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501210186",
+      "width": 850,
+      "height": 850,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/bundle_two_minis_1.png?v=1769566796",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114446925898,
+    "title": "Bundle: Sans Air + Mini",
+    "body_html": "A portable air purifier bundle with HEPA 13 filtration and activated carbon for comprehensive, quiet air purification.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:19:57+04:00",
+    "handle": "bundle-sans-air-mini",
+    "updated_at": "2026-01-28T06:19:58+04:00",
+    "published_at": "2026-01-28T06:19:57+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114446925898",
+    "variants": [
+      {
+        "id": 43264902561866,
+        "product_id": 8114446925898,
+        "title": "Bundle: Sans Air + Mini",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Bundle: Sans Air + Mini",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:19:58+04:00",
+        "updated_at": "2026-01-28T06:19:58+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084558410,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902561866",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555260490,
+        "product_id": 8114446925898,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Bundle: Sans Air + Mini"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047656587338,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114446925898,
+        "created_at": "2026-01-28T06:19:58+04:00",
+        "updated_at": "2026-01-28T06:19:58+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501242954",
+        "width": 850,
+        "height": 850,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/bundle_air_and_mini_1.png?v=1769566798",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047656587338,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114446925898,
+      "created_at": "2026-01-28T06:19:58+04:00",
+      "updated_at": "2026-01-28T06:19:58+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501242954",
+      "width": 850,
+      "height": 850,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/bundle_air_and_mini_1.png?v=1769566798",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114446958666,
+    "title": "8MM MINI CUBAN CHAIN",
+    "body_html": "A versatile 8mm mini Cuban chain necklace offering durability and style without overpowering outfits.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:01+04:00",
+    "handle": "8mm-mini-cuban-chain",
+    "updated_at": "2026-01-28T06:20:02+04:00",
+    "published_at": "2026-01-28T06:20:01+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114446958666",
+    "variants": [
+      {
+        "id": 43264902594634,
+        "product_id": 8114446958666,
+        "title": "8MM MINI CUBAN CHAIN",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "8MM MINI CUBAN CHAIN",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:02+04:00",
+        "updated_at": "2026-01-28T06:20:02+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084591178,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902594634",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555293258,
+        "product_id": 8114446958666,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "8MM MINI CUBAN CHAIN"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047656783946,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114446958666,
+        "created_at": "2026-01-28T06:20:02+04:00",
+        "updated_at": "2026-01-28T06:20:02+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501275722",
+        "width": 1800,
+        "height": 1800,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/8mm-mini-cuban-chain-m3563.webp?v=1769566802",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047656783946,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114446958666,
+      "created_at": "2026-01-28T06:20:02+04:00",
+      "updated_at": "2026-01-28T06:20:02+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501275722",
+      "width": 1800,
+      "height": 1800,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/8mm-mini-cuban-chain-m3563.webp?v=1769566802",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114446991434,
+    "title": "Indoor Cam E220",
+    "body_html": "A 2K indoor camera with AI-powered 360-degree monitoring, smart home integration, and two-way audio for secure, real-time home and pet protection.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:06+04:00",
+    "handle": "indoor-cam-e220",
+    "updated_at": "2026-01-28T06:20:06+04:00",
+    "published_at": "2026-01-28T06:20:06+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114446991434",
+    "variants": [
+      {
+        "id": 43264902627402,
+        "product_id": 8114446991434,
+        "title": "Indoor Cam E220",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Indoor Cam E220",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:06+04:00",
+        "updated_at": "2026-01-28T06:20:06+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084623946,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902627402",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555326026,
+        "product_id": 8114446991434,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Indoor Cam E220"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047656816714,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114446991434,
+        "created_at": "2026-01-28T06:20:06+04:00",
+        "updated_at": "2026-01-28T06:20:06+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501308490",
+        "width": 1200,
+        "height": 1200,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/12-2.webp?v=1769566806",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047656816714,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114446991434,
+      "created_at": "2026-01-28T06:20:06+04:00",
+      "updated_at": "2026-01-28T06:20:06+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501308490",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/12-2.webp?v=1769566806",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114447024202,
+    "title": "Active+ Thermacool",
+    "body_html": "A high-performance electric massage gun with deep tissue, hot and cold therapy, and app connectivity for targeted muscle relief and recovery.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:08+04:00",
+    "handle": "active-thermacool",
+    "updated_at": "2026-01-28T06:20:09+04:00",
+    "published_at": "2026-01-28T06:20:08+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114447024202",
+    "variants": [
+      {
+        "id": 43264902660170,
+        "product_id": 8114447024202,
+        "title": "Active+ Thermacool",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Active+ Thermacool",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:09+04:00",
+        "updated_at": "2026-01-28T06:20:09+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084656714,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902660170",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555358794,
+        "product_id": 8114447024202,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Active+ Thermacool"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047657013322,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114447024202,
+        "created_at": "2026-01-28T06:20:09+04:00",
+        "updated_at": "2026-01-28T06:20:09+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501341258",
+        "width": 1600,
+        "height": 1344,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/WMG08_01_d306ca5c-3cab-42be-b73b-ab5def70e187.png?v=1769566809",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047657013322,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114447024202,
+      "created_at": "2026-01-28T06:20:09+04:00",
+      "updated_at": "2026-01-28T06:20:09+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501341258",
+      "width": 1600,
+      "height": 1344,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/WMG08_01_d306ca5c-3cab-42be-b73b-ab5def70e187.png?v=1769566809",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114447056970,
+    "title": "Active + Massage Gun",
+    "body_html": "A portable, app-controlled massage gun with five massage heads and ultra-quiet operation for effective muscle recovery and relaxation.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:11+04:00",
+    "handle": "active-massage-gun",
+    "updated_at": "2026-01-28T06:20:11+04:00",
+    "published_at": "2026-01-28T06:20:11+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114447056970",
+    "variants": [
+      {
+        "id": 43264902692938,
+        "product_id": 8114447056970,
+        "title": "Active + Massage Gun",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Active + Massage Gun",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:11+04:00",
+        "updated_at": "2026-01-28T06:20:11+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084689482,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902692938",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555391562,
+        "product_id": 8114447056970,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Active + Massage Gun"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047657046090,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114447056970,
+        "created_at": "2026-01-28T06:20:11+04:00",
+        "updated_at": "2026-01-28T06:20:11+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501374026",
+        "width": 800,
+        "height": 672,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/C002S_01_3f7b1fda-c620-4405-b7e7-5cd6582ccd26.png?v=1769566811",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047657046090,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114447056970,
+      "created_at": "2026-01-28T06:20:11+04:00",
+      "updated_at": "2026-01-28T06:20:11+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501374026",
+      "width": 800,
+      "height": 672,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/C002S_01_3f7b1fda-c620-4405-b7e7-5cd6582ccd26.png?v=1769566811",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114447089738,
+    "title": "Collagen Glow Up Mask 2.0",
+    "body_html": "A Korean collagen face mask that deeply hydrates, firms, and transforms dry, tired skin into a radiant, youthful glow overnight.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:16+04:00",
+    "handle": "collagen-glow-up-mask-2-0",
+    "updated_at": "2026-01-28T06:20:16+04:00",
+    "published_at": "2026-01-28T06:20:16+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114447089738",
+    "variants": [
+      {
+        "id": 43264902725706,
+        "product_id": 8114447089738,
+        "title": "Collagen Glow Up Mask 2.0",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Collagen Glow Up Mask 2.0",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:16+04:00",
+        "updated_at": "2026-01-28T06:20:16+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084722250,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902725706",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555424330,
+        "product_id": 8114447089738,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Collagen Glow Up Mask 2.0"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047657242698,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114447089738,
+        "created_at": "2026-01-28T06:20:16+04:00",
+        "updated_at": "2026-01-28T06:20:16+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501406794",
+        "width": 1080,
+        "height": 1080,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/15_5fc1d0a1-392e-4a73-a21c-43ba0e4b97d5.png?v=1769566816",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047657242698,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114447089738,
+      "created_at": "2026-01-28T06:20:16+04:00",
+      "updated_at": "2026-01-28T06:20:16+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501406794",
+      "width": 1080,
+      "height": 1080,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/15_5fc1d0a1-392e-4a73-a21c-43ba0e4b97d5.png?v=1769566816",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114447155274,
+    "title": "Bio-Collagen Real Deep Mask",
+    "body_html": "A deep hydration sheet mask with collagen and hyaluronic acid for radiant, firm, and plump skin.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:19+04:00",
+    "handle": "bio-collagen-real-deep-mask",
+    "updated_at": "2026-01-28T06:20:19+04:00",
+    "published_at": "2026-01-28T06:20:19+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114447155274",
+    "variants": [
+      {
+        "id": 43264902791242,
+        "product_id": 8114447155274,
+        "title": "Bio-Collagen Real Deep Mask",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Bio-Collagen Real Deep Mask",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:19+04:00",
+        "updated_at": "2026-01-28T06:20:19+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084755018,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902791242",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555457098,
+        "product_id": 8114447155274,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Bio-Collagen Real Deep Mask"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047657275466,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114447155274,
+        "created_at": "2026-01-28T06:20:19+04:00",
+        "updated_at": "2026-01-28T06:20:19+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501439562",
+        "width": 1000,
+        "height": 1000,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/Bio-Collagen_Real_Deep_Mask_1.png?v=1769566819",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047657275466,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114447155274,
+      "created_at": "2026-01-28T06:20:19+04:00",
+      "updated_at": "2026-01-28T06:20:19+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501439562",
+      "width": 1000,
+      "height": 1000,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/Bio-Collagen_Real_Deep_Mask_1.png?v=1769566819",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114447188042,
+    "title": "Blue Pure Mini Max Bundle",
+    "body_html": "Compact air purifier that quickly cleans up to 216 ft² in 30 minutes with three fan speeds and washable filters.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:22+04:00",
+    "handle": "blue-pure-mini-max-bundle",
+    "updated_at": "2026-01-28T06:20:22+04:00",
+    "published_at": "2026-01-28T06:20:22+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114447188042",
+    "variants": [
+      {
+        "id": 43264902824010,
+        "product_id": 8114447188042,
+        "title": "Blue Pure Mini Max Bundle",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Blue Pure Mini Max Bundle",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:22+04:00",
+        "updated_at": "2026-01-28T06:20:22+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084820554,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902824010",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555522634,
+        "product_id": 8114447188042,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Blue Pure Mini Max Bundle"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047657308234,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114447188042,
+        "created_at": "2026-01-28T06:20:22+04:00",
+        "updated_at": "2026-01-28T06:20:22+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501472330",
+        "width": 1696,
+        "height": 1696,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/Mini_Max_Bundle_572b3d6f-d371-4620-aab8-4c90f23f6011.png?v=1769566822",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047657308234,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114447188042,
+      "created_at": "2026-01-28T06:20:22+04:00",
+      "updated_at": "2026-01-28T06:20:22+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501472330",
+      "width": 1696,
+      "height": 1696,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/Mini_Max_Bundle_572b3d6f-d371-4620-aab8-4c90f23f6011.png?v=1769566822",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114447220810,
+    "title": "Luxium Shield - Durable Smart Watch",
+    "body_html": "A rugged smart watch with titanium frame, shatter-resistant display, and 30-day battery life for demanding users.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:26+04:00",
+    "handle": "luxium-shield-durable-smart-watch",
+    "updated_at": "2026-01-28T06:20:26+04:00",
+    "published_at": "2026-01-28T06:20:26+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114447220810",
+    "variants": [
+      {
+        "id": 43264902856778,
+        "product_id": 8114447220810,
+        "title": "Luxium Shield - Durable Smart Watch",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Luxium Shield - Durable Smart Watch",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:26+04:00",
+        "updated_at": "2026-01-28T06:20:26+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084853322,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902856778",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555555402,
+        "product_id": 8114447220810,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Luxium Shield - Durable Smart Watch"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047657504842,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114447220810,
+        "created_at": "2026-01-28T06:20:26+04:00",
+        "updated_at": "2026-01-28T06:20:26+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501505098",
+        "width": 2112,
+        "height": 2112,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/shield_001_1.jpg?v=1769566826",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047657504842,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114447220810,
+      "created_at": "2026-01-28T06:20:26+04:00",
+      "updated_at": "2026-01-28T06:20:26+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501505098",
+      "width": 2112,
+      "height": 2112,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/shield_001_1.jpg?v=1769566826",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114447253578,
+    "title": "Everyday Phone Case - iPhone 17 Pro - Matte Olive",
+    "body_html": "A slim, snug-fit matte olive back cover for iPhone 17 Pro, designed for everyday durability and minimalist style.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:28+04:00",
+    "handle": "everyday-phone-case-iphone-17-pro-matte-olive",
+    "updated_at": "2026-01-28T06:20:28+04:00",
+    "published_at": "2026-01-28T06:20:28+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114447253578",
+    "variants": [
+      {
+        "id": 43264902889546,
+        "product_id": 8114447253578,
+        "title": "Everyday Phone Case - iPhone 17 Pro - Matte Olive",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Everyday Phone Case - iPhone 17 Pro - Matte Olive",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:28+04:00",
+        "updated_at": "2026-01-28T06:20:28+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084886090,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902889546",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555588170,
+        "product_id": 8114447253578,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Everyday Phone Case - iPhone 17 Pro - Matte Olive"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047657537610,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114447253578,
+        "created_at": "2026-01-28T06:20:28+04:00",
+        "updated_at": "2026-01-28T06:20:28+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501537866",
+        "width": 1000,
+        "height": 1000,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/iPhone17Pro-Olive-THUMBNAIL_ce53eb84-b7e6-48d7-8b97-ca0f4d46fe16.jpg?v=1769566828",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047657537610,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114447253578,
+      "created_at": "2026-01-28T06:20:28+04:00",
+      "updated_at": "2026-01-28T06:20:28+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501537866",
+      "width": 1000,
+      "height": 1000,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/iPhone17Pro-Olive-THUMBNAIL_ce53eb84-b7e6-48d7-8b97-ca0f4d46fe16.jpg?v=1769566828",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114447286346,
+    "title": "Ground Rice and Honey Glow Mask",
+    "body_html": "A wash-off face mask combining brightening, hydrating, and soothing effects for radiant, smooth skin.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:32+04:00",
+    "handle": "ground-rice-and-honey-glow-mask",
+    "updated_at": "2026-01-28T06:20:32+04:00",
+    "published_at": "2026-01-28T06:20:32+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114447286346",
+    "variants": [
+      {
+        "id": 43264902922314,
+        "product_id": 8114447286346,
+        "title": "Ground Rice and Honey Glow Mask",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Ground Rice and Honey Glow Mask",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:32+04:00",
+        "updated_at": "2026-01-28T06:20:32+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084918858,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902922314",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555620938,
+        "product_id": 8114447286346,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Ground Rice and Honey Glow Mask"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047657734218,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114447286346,
+        "created_at": "2026-01-28T06:20:32+04:00",
+        "updated_at": "2026-01-28T06:20:32+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501570634",
+        "width": 800,
+        "height": 800,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/BeautyofJoseon-GroundRiceandHoneyGlowMask.webp?v=1769566832",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047657734218,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114447286346,
+      "created_at": "2026-01-28T06:20:32+04:00",
+      "updated_at": "2026-01-28T06:20:32+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501570634",
+      "width": 800,
+      "height": 800,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/BeautyofJoseon-GroundRiceandHoneyGlowMask.webp?v=1769566832",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114447319114,
+    "title": "Passive Lotus Diffuser",
+    "body_html": "A reusable lotus-shaped diffuser that gently scents your space with essential oils using only water and natural materials.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:34+04:00",
+    "handle": "passive-lotus-diffuser",
+    "updated_at": "2026-01-28T06:20:35+04:00",
+    "published_at": "2026-01-28T06:20:34+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114447319114",
+    "variants": [
+      {
+        "id": 43264902955082,
+        "product_id": 8114447319114,
+        "title": "Passive Lotus Diffuser",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Passive Lotus Diffuser",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:35+04:00",
+        "updated_at": "2026-01-28T06:20:35+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084951626,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902955082",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555653706,
+        "product_id": 8114447319114,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Passive Lotus Diffuser"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047657996362,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114447319114,
+        "created_at": "2026-01-28T06:20:34+04:00",
+        "updated_at": "2026-01-28T06:20:35+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501832778",
+        "width": 480,
+        "height": 480,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/passive_lotus_diffuser-top_2_480x480_52f02711-d61c-474b-9b8d-57168b78c093.jpg?v=1769566835",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047657996362,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114447319114,
+      "created_at": "2026-01-28T06:20:34+04:00",
+      "updated_at": "2026-01-28T06:20:35+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501832778",
+      "width": 480,
+      "height": 480,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/passive_lotus_diffuser-top_2_480x480_52f02711-d61c-474b-9b8d-57168b78c093.jpg?v=1769566835",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114447351882,
+    "title": "Vintage Washed Faith Denim Jacket",
+    "body_html": "A heavyweight denim jacket featuring faith embroidery and adjustable fit for versatile, faith-inspired style.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:37+04:00",
+    "handle": "vintage-washed-faith-denim-jacket",
+    "updated_at": "2026-01-28T06:20:37+04:00",
+    "published_at": "2026-01-28T06:20:37+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114447351882",
+    "variants": [
+      {
+        "id": 43264902987850,
+        "product_id": 8114447351882,
+        "title": "Vintage Washed Faith Denim Jacket",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Vintage Washed Faith Denim Jacket",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:37+04:00",
+        "updated_at": "2026-01-28T06:20:37+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363084984394,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264902987850",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555686474,
+        "product_id": 8114447351882,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Vintage Washed Faith Denim Jacket"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047658029130,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114447351882,
+        "created_at": "2026-01-28T06:20:37+04:00",
+        "updated_at": "2026-01-28T06:20:37+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501963850",
+        "width": 2048,
+        "height": 2048,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/2025_01_29_DenimJacket_FaithSleeve_04.jpg?v=1769566837",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047658029130,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114447351882,
+      "created_at": "2026-01-28T06:20:37+04:00",
+      "updated_at": "2026-01-28T06:20:37+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501963850",
+      "width": 2048,
+      "height": 2048,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/2025_01_29_DenimJacket_FaithSleeve_04.jpg?v=1769566837",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114447384650,
+    "title": "SKELETON BEARD TRIMMER",
+    "body_html": "A precision-engineered trimmer for effortless, close beard grooming at home or on the go.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:41+04:00",
+    "handle": "skeleton-beard-trimmer",
+    "updated_at": "2026-01-28T06:20:41+04:00",
+    "published_at": "2026-01-28T06:20:41+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114447384650",
+    "variants": [
+      {
+        "id": 43264903020618,
+        "product_id": 8114447384650,
+        "title": "SKELETON BEARD TRIMMER",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "SKELETON BEARD TRIMMER",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:41+04:00",
+        "updated_at": "2026-01-28T06:20:41+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363085017162,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264903020618",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555719242,
+        "product_id": 8114447384650,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "SKELETON BEARD TRIMMER"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047658324042,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114447384650,
+        "created_at": "2026-01-28T06:20:41+04:00",
+        "updated_at": "2026-01-28T06:20:41+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538501996618",
+        "width": 3000,
+        "height": 3000,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/KEVINJUNIOR41593copy_49827ebe-7182-475a-a189-425e4c274f3a.jpg?v=1769566841",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047658324042,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114447384650,
+      "created_at": "2026-01-28T06:20:41+04:00",
+      "updated_at": "2026-01-28T06:20:41+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538501996618",
+      "width": 3000,
+      "height": 3000,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/KEVINJUNIOR41593copy_49827ebe-7182-475a-a189-425e4c274f3a.jpg?v=1769566841",
+      "variant_ids": []
+    }
+  },
+  {
+    "id": 8114447417418,
+    "title": "Miko Y2 Foot Compression Heat, Vibration Massager Therapy Device",
+    "body_html": "A wireless foot massager with advanced Petrissage Max technology, air compression, and customizable heat therapy for pain relief and improved circulation.",
+    "vendor": "MCP Vendor",
+    "product_type": "MCP Product",
+    "created_at": "2026-01-28T06:20:44+04:00",
+    "handle": "miko-y2-foot-compression-heat-vibration-massager-therapy-device",
+    "updated_at": "2026-01-28T06:20:44+04:00",
+    "published_at": "2026-01-28T06:20:44+04:00",
+    "template_suffix": null,
+    "published_scope": "web",
+    "tags": "",
+    "status": "active",
+    "admin_graphql_api_id": "gid://shopify/Product/8114447417418",
+    "variants": [
+      {
+        "id": 43264903053386,
+        "product_id": 8114447417418,
+        "title": "Miko Y2 Foot Compression Heat, Vibration Massager Therapy Device",
+        "price": "10.00",
+        "position": 1,
+        "inventory_policy": "deny",
+        "compare_at_price": "15.00",
+        "option1": "Miko Y2 Foot Compression Heat, Vibration Massager Therapy Device",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-01-28T06:20:44+04:00",
+        "updated_at": "2026-01-28T06:20:44+04:00",
+        "taxable": true,
+        "barcode": null,
+        "fulfillment_service": "manual",
+        "grams": 0,
+        "inventory_management": null,
+        "requires_shipping": true,
+        "sku": null,
+        "weight": 0.0,
+        "weight_unit": "kg",
+        "inventory_item_id": 45363085049930,
+        "inventory_quantity": 0,
+        "old_inventory_quantity": 0,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/43264903053386",
+        "image_id": null
+      }
+    ],
+    "options": [
+      {
+        "id": 10807555752010,
+        "product_id": 8114447417418,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Miko Y2 Foot Compression Heat, Vibration Massager Therapy Device"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 35047658356810,
+        "alt": null,
+        "position": 1,
+        "product_id": 8114447417418,
+        "created_at": "2026-01-28T06:20:44+04:00",
+        "updated_at": "2026-01-28T06:20:44+04:00",
+        "admin_graphql_api_id": "gid://shopify/MediaImage/26538502029386",
+        "width": 2200,
+        "height": 2200,
+        "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/Amazon_Y2_L_01_Eliot.png?v=1769566844",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 35047658356810,
+      "alt": null,
+      "position": 1,
+      "product_id": 8114447417418,
+      "created_at": "2026-01-28T06:20:44+04:00",
+      "updated_at": "2026-01-28T06:20:44+04:00",
+      "admin_graphql_api_id": "gid://shopify/MediaImage/26538502029386",
+      "width": 2200,
+      "height": 2200,
+      "src": "https://cdn.shopify.com/s/files/1/0648/1254/8170/files/Amazon_Y2_L_01_Eliot.png?v=1769566844",
+      "variant_ids": []
+    }
+  }
+]

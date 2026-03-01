@@ -1,0 +1,962 @@
+[
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.599999904632568,
+      "count": 78703
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/69Vi2T3NUhx4P4FiYAu93X?_gsid=43dfb34668074f81&available_for_sale=1&product_id=7093261565975&query=bluetooth+earbuds&ships_to=US&variant_id=41161247883287"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 51008
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/yLHP6XTxBcXAaYYtemnJq?_gsid=82a3f45e776444a1&available_for_sale=1&product_id=10246952911201&query=casual+cotton+t+shirt&ships_to=US&variant_id=47896732959073"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.400000095367432,
+      "count": 27129
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/6zfCwGVp79hnhI52bGN0Wp?_gsid=7b6c4a1546514268&available_for_sale=1&product_id=9084308291829&query=sleep+aid&ships_to=US&variant_id=46734794621173"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 5.0,
+      "count": 20349
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/5EHmjDvn3jpOTVVNR4023d?_gsid=ebc2342c1f6a449f&available_for_sale=1&product_id=3517652697165&query=silk+pillowcase&ships_to=US&variant_id=28006462128205"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 12368
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/1yojXa75e5ciGefQTeXl1O?_gsid=96c1d758de784c3d&available_for_sale=1&product_id=8825346490697&query=smartwatch&ships_to=US&variant_id=49269878456649"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 8603
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/5vrHdK9eYwCxGvBPMnxncm?_gsid=d4ccac414a334ffd&available_for_sale=1&product_id=7048735096879&query=sunglasses&ships_to=US&variant_id=40963641114671"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 0.10000000149011612,
+      "count": 5095
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/70Gwp9vmv9B3zMqN3SrUMb?_gsid=d49204fd145f4c62&available_for_sale=1&product_id=7417693143107&query=facial+serum&ships_to=US&variant_id=42281924526147"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 5.0,
+      "count": 5004
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/ENrCUaKsgMS6Eeq41k4YF?_gsid=87c0ca5d7b7b42eb&available_for_sale=1&product_id=6701278658642&query=women+wallet&ships_to=US&variant_id=39562228760658"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 5.0,
+      "count": 5004
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/487BYvhMxPqlzxbhnIeljG?_gsid=87c0ca5d7b7b42eb&available_for_sale=1&product_id=6673008066642&query=women+wallet&ships_to=US&variant_id=39540210663506"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 4986
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/2XpQQQW20VwHjIDgvXKWkk?_gsid=96c1d758de784c3d&available_for_sale=1&product_id=8397462372681&query=smartwatch&ships_to=US&variant_id=46701739213129"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 4814
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/6gIv4sqUt1sCAfYANM4T3t?_gsid=c5d3568ae62643ea&available_for_sale=1&product_id=1429671346275&query=athleisure+joggers&ships_to=US&variant_id=31739081424995"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.699999809265137,
+      "count": 4238
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/5HVcaKhgmmNxtA3YSyg82r?_gsid=465b3f62e1a4432b&available_for_sale=1&product_id=4396837830756&query=classic+baseball+cap&ships_to=US&variant_id=45037148111010"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 4111
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/6nrGXM9j3Egt8i6EZZ00Iv?_gsid=d49204fd145f4c62&available_for_sale=1&product_id=6046636540079&query=facial+serum&ships_to=US&variant_id=37392307978415"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 4085
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/1ydczeyHr3AZlzx3MWQ38B?_gsid=2feaf306b2dd4181&available_for_sale=1&product_id=8219248001268&query=mini+air+purifier&ships_to=US&variant_id=44191244321012"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 4085
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/5JQYDYmGmaCHiG6ybB5DZX?_gsid=2feaf306b2dd4181&available_for_sale=1&product_id=8409289851124&query=mini+air+purifier&ships_to=US&variant_id=47183230173428"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 4085
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/7dP09OOxQfDTBXlTFrICZC?_gsid=2feaf306b2dd4181&available_for_sale=1&product_id=8281829736692&query=mini+air+purifier&ships_to=US&variant_id=47183192686836"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 3609
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/1hvlgQWJugmaFKx0oXQB3F?_gsid=87c0ca5d7b7b42eb&available_for_sale=1&product_id=7458460663890&query=women+wallet&ships_to=US&variant_id=42050876473426"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 3592
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/1rDupRxuHjSQBsMylzQHqM?_gsid=82a3f45e776444a1&available_for_sale=1&product_id=7870172496009&query=casual+cotton+t+shirt&ships_to=US&variant_id=43005979164809"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 3574
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/4zvJ6xHUYar9ltWm0bdogf?_gsid=72f7f92593ce4f84&available_for_sale=1&product_id=6935876829246&query=cuban+chain+necklace&ships_to=US&variant_id=39746234843198"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 3574
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/7EgzqwBZIkUeMFVlPA1fJW?_gsid=72f7f92593ce4f84&available_for_sale=1&product_id=6935884595262&query=cuban+chain+necklace&ships_to=US&variant_id=39746238021694"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 3231
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/2ptTelXkL3q68t5rykiRd4?_gsid=96c1d758de784c3d&available_for_sale=1&product_id=8262312821036&query=smartwatch&ships_to=US&variant_id=44919108403500"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 3135
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/5S6nZJX6f6qeC8csVOG4K2?_gsid=fe62ebd25e584896&available_for_sale=1&product_id=9129235513596&query=hoodie+sweatshirt&ships_to=US&variant_id=48238691909884"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.300000190734863,
+      "count": 2964
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/4cF3pPdSDquBeHhRQJ3fH8?_gsid=7a8e121192fa423e&available_for_sale=1&product_id=6764899205195&query=henley+shirt&ships_to=US&variant_id=39852882952267"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 2885
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/hLNc7SSRYO8NKyYEgBZEC?_gsid=66f668aecafc415f&available_for_sale=1&product_id=10532388405441&query=hair+dryer&ships_to=US&variant_id=48574203330753"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 2884
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/3ZXbMleLGDRBc73M0UorMQ?_gsid=5a3850aa5b704a13&available_for_sale=1&product_id=6535749238951&query=smart+home+security+camera&ships_to=US&variant_id=39248136732839"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 2800
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/1JiichC4C6zmvpwLryhLJG?_gsid=c5d3568ae62643ea&available_for_sale=1&product_id=1429671673955&query=athleisure+joggers&ships_to=US&variant_id=31739080999011"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.5,
+      "count": 2629
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/6VGBNLRZyGjqiWk0f6kPZ5?_gsid=7b6c4a1546514268&available_for_sale=1&product_id=8517452923112&query=sleep+aid&ships_to=US&variant_id=45308976398568"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 2546
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/1hUuMUSwAVUXnCvbypdsvt?_gsid=402cdc614b6e400e&available_for_sale=1&product_id=7607767597228&query=massage+gun&ships_to=US&variant_id=42500529619116"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.400000095367432,
+      "count": 2460
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/1KdC4OBWaxlh29YrZv4slm?_gsid=109e1c7552994c91&available_for_sale=1&product_id=7855047409817&query=kids+shoes&ships_to=US&variant_id=43963830632601"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 2398
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/42MtYYjq7fZ4J6XQbmqFl2?_gsid=402cdc614b6e400e&available_for_sale=1&product_id=7484908896428&query=massage+gun&ships_to=US&variant_id=42114602139820"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.699999809265137,
+      "count": 2375
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/5bvniY4ZoDuXiFpD8fNi5H?_gsid=f836852c8f004151&available_for_sale=1&product_id=4715010916441&query=led+facial+cleansing+brush&ships_to=US&variant_id=32154608795737"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 2331
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/C7BGHdbT8bc51I5wQVEF8?_gsid=7fb0b4cd8e2a4f29&available_for_sale=1&product_id=3526917521491&query=skincare+mask&ships_to=US&variant_id=29074806407251"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 2241
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/4qCeS1VnGZ4rU2hImHOADE?_gsid=924b08cbcb3240b9&available_for_sale=1&product_id=6747933868189&query=the+jolie+filtered+showerhead&ships_to=US&variant_id=40095666208925"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 2241
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/3JPRXSbXDZpiKHGGBe3jOP?_gsid=924b08cbcb3240b9&available_for_sale=1&product_id=7285536194717&query=the+jolie+filtered+showerhead&ships_to=US&variant_id=41980490547357"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.300000190734863,
+      "count": 2133
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/1UbpfbcRMHQ2i6gvch69LA?_gsid=8699487700fc4e8c&available_for_sale=1&product_id=6633366323272&query=slim+fit+stretch+chino+pants&ships_to=US&variant_id=40623799435336"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.699999809265137,
+      "count": 2108
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/32vGPLZbU39KGluz7mNARO?_gsid=ebc2342c1f6a449f&available_for_sale=1&product_id=1566145445978&query=silk+pillowcase&ships_to=US&variant_id=15411676381274"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 2089
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/3vqSc8mxC2Ff4UwEBR4ULr?_gsid=ebc2342c1f6a449f&available_for_sale=1&product_id=9878980624723&query=silk+pillowcase&ships_to=US&variant_id=50846780555603"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 5.0,
+      "count": 1979
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/7jGdaG1TElkrqW0IZ7U2rw?_gsid=7fb0b4cd8e2a4f29&available_for_sale=1&product_id=7939752624310&query=skincare+mask&ships_to=US&variant_id=43805225222326"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.400000095367432,
+      "count": 1944
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/3kUuOFmEGu9YoImKd70O9y?_gsid=8c8bf2cd0d6741bc&available_for_sale=1&product_id=9308001488&query=vitamin+c+face+roller&ships_to=US&variant_id=15937963786330"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.5,
+      "count": 1896
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/3keOaytMdfaWULIeSJDZcT?_gsid=7fb0b4cd8e2a4f29&available_for_sale=1&product_id=9486096007492&query=skincare+mask&ships_to=US&variant_id=49036202475844"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.599999904632568,
+      "count": 1851
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/cvd2X3CYC3vwTSJBtGhAc?_gsid=2feaf306b2dd4181&available_for_sale=1&product_id=9661820698910&query=mini+air+purifier&ships_to=US&variant_id=49656097931550"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 1818
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/26uEJ5JEw0V4Fio5AzMobG?_gsid=87c0ca5d7b7b42eb&available_for_sale=1&product_id=7168458358866&query=women+wallet&ships_to=US&variant_id=42014335336530"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 1796
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/2WUVPJ6r6TH7Vb760ZPtz3?_gsid=82a3f45e776444a1&available_for_sale=1&product_id=7870172528777&query=casual+cotton+t+shirt&ships_to=US&variant_id=43005979230345"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 1796
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/6eOP7buKQT6Yg7qlF8LOzh?_gsid=82a3f45e776444a1&available_for_sale=1&product_id=7870172594313&query=casual+cotton+t+shirt&ships_to=US&variant_id=43005979918473"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 1774
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/3bRWNUSJROaI66FuPQG0Rr?_gsid=c5d3568ae62643ea&available_for_sale=1&product_id=1450178871395&query=athleisure+joggers&ships_to=US&variant_id=12678565986403"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 1741
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/5YYn8Y4Om1oihNSbWFpsEz?_gsid=96c1d758de784c3d&available_for_sale=1&product_id=7105583251508&query=smartwatch&ships_to=US&variant_id=41147210760244"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 1714
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/3RpYM1DWZvhrD0sM9XOwL1?_gsid=a369ea53c00444aa&available_for_sale=1&product_id=7674629849132&query=weighted+blanket&ships_to=US&variant_id=44272358457388"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 1692
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/6W2ApJozTAYBITXs8aAMpI?_gsid=5df470cb1f384f3f&available_for_sale=1&product_id=7977491562570&query=phone+case&ships_to=US&variant_id=42500905271370"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 1578
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/1fLWfZBDd2mqGb2GlmgYrm?_gsid=87c0ca5d7b7b42eb&available_for_sale=1&product_id=7409332846674&query=women+wallet&ships_to=US&variant_id=41284287922258"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 1578
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/1RkTYwnz9JIeUvPefm2w3V?_gsid=87c0ca5d7b7b42eb&available_for_sale=1&product_id=7077485281362&query=women+wallet&ships_to=US&variant_id=40354707538002"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 1498
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/4k8RuJLUF4pW9Yv25XwYHB?_gsid=0670b1323a654b2c&available_for_sale=1&product_id=8518309544102&query=oversized+hoodie&ships_to=US&variant_id=55959958061222"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 1467
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/1Ns4Og2Vspef6scIwgJJg9?_gsid=0670b1323a654b2c&available_for_sale=1&product_id=7175617904685&query=oversized+hoodie&ships_to=US&variant_id=41063867940909"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.699999809265137,
+      "count": 1325
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/6VvI1JdmW2jmFohPJ6XjLG?_gsid=999843a5809e4966&available_for_sale=1&product_id=7915916754991&query=eco+leather+sneakers&ships_to=US&variant_id=43559658029103"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.5,
+      "count": 1316
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/6FYgnIuONBqAy5Leqdxz7K?_gsid=7fb0b4cd8e2a4f29&available_for_sale=1&product_id=10092531679566&query=skincare+mask&ships_to=US&variant_id=50907452309838"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 1252
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/3XxLwEoHxHSttGQ86awMnf?_gsid=a49eb53721ed4c12&available_for_sale=1&product_id=331270471&query=men+skincare&ships_to=US&variant_id=766647935"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 1225
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/6BhmJgOmEu7WJ4CkBgrhhT?_gsid=0bc099481c864c9c&available_for_sale=1&product_id=2820098654289&query=kids+night+light&ships_to=US&variant_id=40957030564014"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.5,
+      "count": 1190
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/3cTyasrxAXYeDMNsasw85W?_gsid=582a56cadc244fcc&available_for_sale=1&product_id=7102301241406&query=aromatherapy+diffuser&ships_to=US&variant_id=39913316188222"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 1145
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/7gBkpqLCyTwaQErRKCaJcs?_gsid=83086d7df1b34f45&available_for_sale=1&product_id=7433717022787&query=denim+jacket&ships_to=US&variant_id=42354843680835"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.699999809265137,
+      "count": 1088
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/3N3SPnvje5Lsc7WcUj8eTD?_gsid=c5d3568ae62643ea&available_for_sale=1&product_id=7824750674019&query=athleisure+joggers&ships_to=US&variant_id=43481333301347"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.900000095367432,
+      "count": 1082
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/4bmcj3tevSr6YTFXSvPz4q?_gsid=504b220d04aa45cc&available_for_sale=1&product_id=1442418819123&query=kids+jacket&ships_to=US&variant_id=12945401675827"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.599999904632568,
+      "count": 1074
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/55AxFsHSABEsosCZvjV57m?_gsid=72f7f92593ce4f84&available_for_sale=1&product_id=6824661385287&query=cuban+chain+necklace&ships_to=US&variant_id=40155651833927"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.800000190734863,
+      "count": 1056
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/6z3prSjNwEVHKceBsOEQ2p?_gsid=7e5aa0cc51ce4074&available_for_sale=1&product_id=6535328563255&query=beard+trimmer&ships_to=US&variant_id=40474868023351"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.699999809265137,
+      "count": 1052
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/4Nv424MPgrLzpEcL2EybhI?_gsid=8cb586bc9b6a4b76&available_for_sale=1&product_id=9873642193193&query=foot+circulation+massager&ships_to=US&variant_id=51496664432937"
+  },
+  {
+    "namespace": "reviews",
+    "key": "rating",
+    "type": "json",
+    "value": {
+      "value": 4.599999904632568,
+      "count": 1022
+    }
+  },
+  {
+    "namespace": "source",
+    "key": "lookup_url",
+    "type": "single_line_text_field",
+    "value": "https://discover.shopifyapps.com/global/v2/p/2MWbTjHmGI6NjWkMWt1qio?_gsid=109e1c7552994c91&available_for_sale=1&product_id=7666670010588&query=kids+shoes&ships_to=US&variant_id=44363517329628"
+  }
+]

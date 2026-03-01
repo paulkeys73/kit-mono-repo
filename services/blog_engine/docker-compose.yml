@@ -1,0 +1,23 @@
+services:
+  blog-engine:
+    container_name: blog-engine
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: blog-engine:latest
+    restart: unless-stopped
+    ports:
+      - "8787:8787"
+    environment:
+      TOPIC_API_HOST: 0.0.0.0
+      TOPIC_API_PORT: 8787
+      ENABLE_WP_POST: "0"
+      ENABLE_BING_NOTIFY: "0"
+      ENABLE_SITEMAP_UPDATE: "0"
+    networks:
+      - db-server-net
+
+networks:
+  db-server-net:
+    external: true
+    name: db-server_default

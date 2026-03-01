@@ -1,0 +1,99 @@
+2026-02-18 04:53:21,866 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 1000, 'currency': 'USD', 'user_id': 4, 'username': 'jasminbinda', 'first_name': 'Jasmin', 'last_name': 'Binda', 'email': 'hello_jas@mail.com'}
+2026-02-18 04:53:22,010 | INFO | [RESPONSE] POST /orders/create-order | Status: 200 | Body: {'id': '0CV122365T735470M', 'status': 'CREATED', 'links': [{'href': 'https://api.sandbox.paypal.com/v2/checkout/orders/0CV122365T735470M', 'rel': 'self', 'method': 'GET'}, {'href': 'https://www.sandbox.paypal.com/checkoutnow?token=0CV122365T735470M', 'rel': 'approve', 'method': 'GET'}, {'href': 'https://api.sandbox.paypal.com/v2/checkout/orders/0CV122365T735470M', 'rel': 'update', 'method': 'PATCH'}, {'href': 'https://api.sandbox.paypal.com/v2/checkout/orders/0CV122365T735470M/capture', 'rel': 'capture', 'method': 'POST'}]}
+2026-02-18 05:53:58,300 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 1500, 'currency': 'USD', 'user_id': 4, 'username': 'jasminbinda', 'first_name': 'Jasmin', 'last_name': 'Binda', 'email': 'hello_jas@mail.com'}
+2026-02-18 06:02:58,617 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 2000, 'currency': 'USD', 'user_id': 4, 'username': 'jasminbinda', 'first_name': 'Jasmin', 'last_name': 'Binda', 'email': 'hello_jas@mail.com'}
+2026-02-18 06:07:44,171 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 2500, 'currency': 'USD', 'user_id': 4, 'username': 'jasminbinda', 'first_name': 'Jasmin', 'last_name': 'Binda', 'email': 'hello_jas@mail.com'}
+2026-02-18 06:07:44,271 | ERROR | [ERROR] POST /orders/create-order | Exception: name 'logger' is not defined
+2026-02-18 06:11:33,240 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 2500, 'currency': 'USD', 'user_id': 4, 'username': 'jasminbinda', 'first_name': 'Jasmin', 'last_name': 'Binda', 'email': 'hello_jas@mail.com'}
+2026-02-18 06:11:33,241 | INFO | PayPal order created | Order ID: 2RU96919831586647 | Amount: 2500.0 USD
+2026-02-18 06:11:33,326 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 2RU96919831586647
+2026-02-18 06:11:33,326 | INFO | Create order response sent | Order ID: 2RU96919831586647
+2026-02-18 06:14:08,912 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 3000, 'currency': 'USD', 'user_id': 4, 'username': 'jasminbinda', 'first_name': 'Jasmin', 'last_name': 'Binda', 'email': 'hello_jas@mail.com'}
+2026-02-18 06:14:08,912 | INFO | PayPal order created | Order ID: 3LP08734Y00367948 | Amount: 3000.0 USD
+2026-02-18 06:14:08,991 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 3LP08734Y00367948
+2026-02-18 06:14:08,992 | INFO | Create order response sent | Order ID: 3LP08734Y00367948
+2026-02-27 12:44:19,436 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 100, 'currency': 'USD', 'user_id': 34, 'username': 'paulkeys73', 'first_name': '', 'last_name': '', 'email': 'paulkeys73@gmail.com'}
+2026-02-27 12:44:19,448 | INFO | PayPal order created | Order ID: 0JN87223A8095292M | Amount: 100.0 USD
+2026-02-27 12:44:19,769 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 0JN87223A8095292M
+2026-02-27 12:44:19,769 | INFO | Create order response sent | Order ID: 0JN87223A8095292M
+2026-02-27 13:40:47,361 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 5000, 'currency': 'USD', 'user_id': 34, 'username': 'paulkeys73', 'first_name': '', 'last_name': '', 'email': 'paulkeys73@gmail.com'}
+2026-02-27 13:40:47,362 | INFO | PayPal order created | Order ID: 8A224463NY518770K | Amount: 5000.0 USD
+2026-02-27 13:40:47,422 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 8A224463NY518770K
+2026-02-27 13:40:47,423 | INFO | Create order response sent | Order ID: 8A224463NY518770K
+2026-02-27 13:52:12,454 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 100, 'currency': 'USD', 'user_id': 34, 'username': 'paulkeys73', 'first_name': '', 'last_name': '', 'email': 'paulkeys73@gmail.com'}
+2026-02-27 13:52:12,454 | INFO | PayPal order created | Order ID: 5LL515403D856874T | Amount: 100.0 USD
+2026-02-27 13:52:12,519 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 5LL515403D856874T
+2026-02-27 13:52:12,637 | INFO | Create order response sent | Order ID: 5LL515403D856874T
+2026-02-27 14:15:14,031 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 100, 'currency': 'USD', 'user_id': 34, 'username': 'paulkeys73', 'first_name': '', 'last_name': '', 'email': 'paulkeys73@gmail.com'}
+2026-02-27 14:15:14,031 | INFO | PayPal order created | Order ID: 9XF566867A878082B | Amount: 100.0 USD
+2026-02-27 14:15:14,096 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 9XF566867A878082B
+2026-02-27 14:15:14,255 | INFO | Create order response sent | Order ID: 9XF566867A878082B
+2026-02-27 20:10:14,101 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 100, 'currency': 'USD', 'user_id': 34, 'username': 'paulkeys73', 'first_name': '', 'last_name': '', 'email': 'paulkeys73@gmail.com'}
+2026-02-27 20:10:14,102 | INFO | PayPal order created | Order ID: 3JM30495397958649 | Amount: 100.0 USD
+2026-02-27 20:10:14,161 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 3JM30495397958649
+2026-02-27 20:10:14,345 | INFO | Create order response sent | Order ID: 3JM30495397958649
+2026-02-27 20:10:51,635 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 100, 'currency': 'USD', 'user_id': 34, 'username': 'paulkeys73', 'first_name': '', 'last_name': '', 'email': 'paulkeys73@gmail.com'}
+2026-02-27 20:10:51,635 | INFO | PayPal order created | Order ID: 7W530268H12519353 | Amount: 100.0 USD
+2026-02-27 20:10:51,693 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 7W530268H12519353
+2026-02-27 20:10:51,793 | INFO | Create order response sent | Order ID: 7W530268H12519353
+2026-02-28 02:49:33,607 | ERROR | [ERROR] POST /orders/create-order | Exception: HTTPSConnectionPool(host='api-m.sandbox.paypal.com', port=443): Max retries exceeded with url: /v1/oauth2/token (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f32f7dfd580>: Failed to resolve 'api-m.sandbox.paypal.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-02-28 02:49:33,607 | ERROR | Failed to create donation record | Error: HTTPSConnectionPool(host='api-m.sandbox.paypal.com', port=443): Max retries exceeded with url: /v1/oauth2/token (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f32f7dfd580>: Failed to resolve 'api-m.sandbox.paypal.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-02-28 22:40:33,233 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 100, 'currency': 'USD', 'user_id': 34, 'username': 'paulkeys73', 'first_name': '', 'last_name': '', 'email': 'paulkeys73@gmail.com'}
+2026-02-28 22:40:33,272 | INFO | PayPal order created | Order ID: 4R414720K3830374X | Amount: 100.0 USD
+2026-02-28 22:40:33,637 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 4R414720K3830374X
+2026-02-28 22:40:33,810 | INFO | Create order response sent | Order ID: 4R414720K3830374X
+2026-02-28 22:40:56,932 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 100, 'currency': 'USD', 'user_id': 34, 'username': 'paulkeys73', 'first_name': '', 'last_name': '', 'email': 'paulkeys73@gmail.com'}
+2026-02-28 22:40:56,933 | INFO | PayPal order created | Order ID: 34C94377AJ2962847 | Amount: 100.0 USD
+2026-02-28 22:40:57,012 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 34C94377AJ2962847
+2026-02-28 22:40:57,196 | INFO | Create order response sent | Order ID: 34C94377AJ2962847
+2026-03-01 05:00:09,684 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 100, 'currency': 'USD', 'user_id': 34, 'username': 'paulkeys73', 'first_name': '', 'last_name': '', 'email': 'paulkeys73@gmail.com'}
+2026-03-01 05:00:09,735 | INFO | PayPal order created | Order ID: 5HL5359303889942A | Amount: 100.0 USD
+2026-03-01 05:00:10,313 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 5HL5359303889942A
+2026-03-01 05:00:10,760 | INFO | Create order response sent | Order ID: 5HL5359303889942A
+2026-03-01 05:01:16,690 | ERROR | [ERROR] POST /orders/capture-order/5HL5359303889942A | Exception: 422 Client Error: Unprocessable Entity for url: https://api-m.sandbox.paypal.com/v2/checkout/orders/5HL5359303889942A/capture
+2026-03-01 05:01:40,624 | ERROR | [ERROR] POST /orders/capture-order/5HL5359303889942A | Exception: 422 Client Error: Unprocessable Entity for url: https://api-m.sandbox.paypal.com/v2/checkout/orders/5HL5359303889942A/capture
+2026-03-01 05:02:03,026 | ERROR | [ERROR] POST /orders/capture-order/5HL5359303889942A | Exception: 422 Client Error: Unprocessable Entity for url: https://api-m.sandbox.paypal.com/v2/checkout/orders/5HL5359303889942A/capture
+2026-03-01 05:02:37,087 | ERROR | [ERROR] POST /orders/capture-order/5HL5359303889942A | Exception: 422 Client Error: Unprocessable Entity for url: https://api-m.sandbox.paypal.com/v2/checkout/orders/5HL5359303889942A/capture
+2026-03-01 05:05:37,444 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 100, 'currency': 'USD', 'user_id': 34, 'username': 'paulkeys73', 'first_name': '', 'last_name': '', 'email': 'paulkeys73@gmail.com'}
+2026-03-01 05:05:37,444 | INFO | PayPal order created | Order ID: 9KS98585UM075752A | Amount: 100.0 USD
+2026-03-01 05:05:37,725 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 9KS98585UM075752A
+2026-03-01 05:05:38,230 | INFO | Create order response sent | Order ID: 9KS98585UM075752A
+2026-03-01 05:08:24,232 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 100, 'currency': 'USD', 'user_id': 34, 'username': 'paulkeys73', 'first_name': '', 'last_name': '', 'email': 'paulkeys73@gmail.com'}
+2026-03-01 05:08:24,232 | INFO | PayPal order created | Order ID: 5H353761CF913481H | Amount: 100.0 USD
+2026-03-01 05:08:24,349 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 5H353761CF913481H
+2026-03-01 05:08:24,609 | INFO | Create order response sent | Order ID: 5H353761CF913481H
+2026-03-01 07:55:17,475 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 100, 'currency': 'USD', 'user_id': 35, 'username': 'jasmin', 'first_name': '', 'last_name': '', 'email': 'jasmin@mail.com'}
+2026-03-01 07:55:17,475 | INFO | PayPal order created | Order ID: 56R58476VM244835M | Amount: 100.0 USD
+2026-03-01 07:55:18,766 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 56R58476VM244835M
+2026-03-01 07:55:19,184 | INFO | Create order response sent | Order ID: 56R58476VM244835M
+2026-03-01 08:57:43,391 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 1000, 'currency': 'USD', 'user_id': 45, 'username': 'myuser', 'first_name': '', 'last_name': '', 'email': 'myuser@mail.com'}
+2026-03-01 08:57:43,391 | INFO | PayPal order created | Order ID: 4EU80449AA014820M | Amount: 1000.0 USD
+2026-03-01 08:57:44,002 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 4EU80449AA014820M
+2026-03-01 08:57:46,004 | INFO | Create order response sent | Order ID: 4EU80449AA014820M
+2026-03-01 11:55:40,571 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 100, 'currency': 'USD', 'user_id': 1, 'username': 'Paulkeys', 'first_name': '', 'last_name': '', 'email': 'admin@paulkeys.org'}
+2026-03-01 11:55:40,572 | INFO | PayPal order created | Order ID: 1T772712YR917502E | Amount: 100.0 USD
+2026-03-01 11:55:40,629 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 1T772712YR917502E
+2026-03-01 11:55:40,807 | INFO | Create order response sent | Order ID: 1T772712YR917502E
+2026-03-01 11:58:43,035 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 200, 'currency': 'USD', 'user_id': 1, 'username': 'Paulkeys', 'first_name': '', 'last_name': '', 'email': 'admin@paulkeys.org'}
+2026-03-01 11:58:43,035 | INFO | PayPal order created | Order ID: 23495782TL9021436 | Amount: 200.0 USD
+2026-03-01 11:58:43,159 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 23495782TL9021436
+2026-03-01 11:58:43,343 | INFO | Create order response sent | Order ID: 23495782TL9021436
+2026-03-01 12:06:00,126 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 25, 'currency': 'USD', 'user_id': 1, 'username': 'Paulkeys', 'first_name': '', 'last_name': '', 'email': 'admin@paulkeys.org'}
+2026-03-01 12:06:00,126 | INFO | PayPal order created | Order ID: 93P21894J9359505C | Amount: 25.0 USD
+2026-03-01 12:06:00,196 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 93P21894J9359505C
+2026-03-01 12:06:00,403 | INFO | Create order response sent | Order ID: 93P21894J9359505C
+2026-03-01 12:06:17,187 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 50, 'currency': 'USD', 'user_id': 1, 'username': 'Paulkeys', 'first_name': '', 'last_name': '', 'email': 'admin@paulkeys.org'}
+2026-03-01 12:06:17,188 | INFO | PayPal order created | Order ID: 1JE29157JJ902615C | Amount: 50.0 USD
+2026-03-01 12:06:17,342 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 1JE29157JJ902615C
+2026-03-01 12:06:17,472 | INFO | Create order response sent | Order ID: 1JE29157JJ902615C
+2026-03-01 12:07:01,166 | INFO | Stats refresh triggered | reason=paypal.order.captured | order_id=1JE29157JJ902615C
+2026-03-01 18:26:17,559 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 50, 'currency': 'USD', 'user_id': 1, 'username': 'Paulkeys', 'first_name': '', 'last_name': '', 'email': 'admin@paulkeys.org'}
+2026-03-01 18:26:17,559 | INFO | PayPal order created | Order ID: 7TM40001NJ348115C | Amount: 50.0 USD
+2026-03-01 18:26:17,607 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 7TM40001NJ348115C
+2026-03-01 18:26:17,699 | INFO | Create order response sent | Order ID: 7TM40001NJ348115C
+2026-03-01 18:26:50,292 | INFO | Stats refresh triggered | reason=paypal.order.captured | order_id=7TM40001NJ348115C
+2026-03-02 01:38:27,415 | INFO | [REQUEST] POST /orders/create-order | Body: {'amount': 100, 'currency': 'USD', 'user_id': 34, 'username': 'paulkeys73', 'first_name': '', 'last_name': '', 'email': 'paulkeys73@gmail.com'}
+2026-03-02 01:38:27,416 | INFO | PayPal order created | Order ID: 8PL941659G9984647 | Amount: 100.0 USD
+2026-03-02 01:38:27,849 | INFO | Donation record inserted with status='CREATING' | PayPal Order ID: 8PL941659G9984647
+2026-03-02 01:38:28,040 | INFO | Create order response sent | Order ID: 8PL941659G9984647
+2026-03-02 01:39:28,953 | INFO | Stats refresh triggered | reason=paypal.order.captured | order_id=8PL941659G9984647

@@ -1,0 +1,140 @@
+── paypal-payments/
+        ├── main.py                         # FastAPI entrypoint (mountable)
+        ├── paypal_service.py              # PayPal API helpers (token, create/capture)
+        ├── schemas.py                     # Pydantic request/response models
+        ├── utils.py                       # webhook verification helper
+        ├── config.py                      # env loader & config
+        ├── Dockerfile
+        ├── requirements.txt
+        └── .env
+
+
+
+
+
+
+
+
+
+
+
+ Common sandbox test cards
+
+Visa
+
+Number: 4111111111111111
+
+Expiry: any future date (e.g. 12/2030 or 12/30)
+
+CVV: any 3 digits (e.g. 123)
+
+Name: Test Buyer
+
+Mastercard
+
+Number: 5555555555554444
+
+Expiry: any future date
+
+CVV: any 3 digits (e.g. 123)
+
+American Express
+
+Number: 378282246310005 (or 3714 496353 98431)
+
+Expiry: any future date
+
+CVV: 4 digits (e.g. 1234)
+
+Discover
+
+Number: 6011111111111117
+
+Expiry: any future date
+
+CVV: 3 digits
+
+JCB
+
+Number: 3566002020360505
+
+Expiry: any future date
+
+CVV: 3 digits       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+source venv/bin/activate
+
+python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8800 --reload
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+psql -h localhost -p 5432 -U kit -d knightindustrytech
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+source venv/bin/activate
+
+python -m uvicorn app.main:app --host 0.0.0.0 --port 8800 --reload
+
+# Health WebSocket stream
+# ws://127.0.0.1:8800/ws/health

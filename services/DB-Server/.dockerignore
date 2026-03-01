@@ -1,0 +1,11 @@
+.git
+.gitignore
+venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.log
+.env
+.requirements.sha256
+db_stats.json

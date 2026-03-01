@@ -1,0 +1,44 @@
+
+source venv/bin/activate
+
+uvicorn main:app --reload --host 0.0.0.0 --port 8011
+
+
+cd E:\DB-Server
+uvicorn stats.donationStats:app --host 0.0.0.0 --port 8012 --reload
+
+# Health WebSocket stream (no continuous HTTP polling)
+# ws://127.0.0.1:8011/ws/health
+# ws://127.0.0.1:8012/ws/health
+
+
+
+python -m scripts.clear_donations_db
+
+
+
+PYTHONPATH=$PWD alembic upgrade head
+
+
+alembic upgrade head
+
+
+docker compose build --progress=plain
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+curl -X POST http://localhost:8011/donation-stats/ \
+  -H "Content-Type: application/json" \
+  -d '{"currency":"USD","today_date":"2025-12-19","today_total":120.50,"today_count":3,"month":"2025-12","monthly_target":10000,"monthly_total":420.75,"monthly_count":12,"percent":42.07,"remaining":579.25,"updated_at":"2025-12-19T15:12:00Z"}' 

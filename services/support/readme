@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+source venv/bin/activate
+python3 -m uvicorn main:app --host 0.0.0.0 --port 8099 --reload
+
+# Health WebSocket stream
+# ws://127.0.0.1:8099/ws/health

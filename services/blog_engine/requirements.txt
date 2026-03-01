@@ -1,0 +1,6 @@
+jinja2
+pillow
+beautifulsoup4
+lxml
+requests
+numpy

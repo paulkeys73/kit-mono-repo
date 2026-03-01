@@ -1,0 +1,16 @@
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+python -m uvicorn main:app --host 0.0.0.0 --port 8009 --reload --no-access-log --log-level warning
+python -m uvicorn donate_stat:app --host 0.0.0.0 --port 8008 --reload --no-access-log --log-level warning
+
+# WebSocket endpoints
+# main app: ws://127.0.0.1:8009/ws/status
+# donation stats relay: ws://127.0.0.1:8008/ws/status
+
+# Aggregated service health (single WS for all services)
+# ws://127.0.0.1:8009/ws/health
+# donation stats health: ws://127.0.0.1:8008/ws/health
+
+# support events namespace: ws://127.0.0.1:8009/ws/support

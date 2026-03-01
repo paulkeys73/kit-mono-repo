@@ -1,0 +1,435 @@
+#LOGIN WITH CURL
+
+
+ curl -X POST http://127.0.0.1:8034/api/login/ \
+ -H "C>   -H "Content-Type: application/json" \
+>   -d '{"username":"paul_test","password":"StrongPass123!"}'
+{"success": true, "username": "paul_test", "email": "paul_test@example.com"}
+
+
+#SIGN UP WITH CURL
+ curl -X POST http://127.0.0.1:8034/api/signup/ \
+>   -H "Content-Type: application/json" \
+>   -d '{"username":"paul_test","email":"paul_test@example.com","password":"StrongPass123!"}'
+{"message": "User registered successfully. Please verify your email.", "user": {"id": 5, "username": "paul_test", "email": "paul_test@example.com"}}
+
+#FORGOT PASSWORD
+
+curl -X POST http://127.0.0.1:8034/api/reset-password/ \
+  -H "Content-Type: application/json" \
+  -d '{"email": "paul_demo@example.com"}'
+
+{"success": true, "message": "Password reset email sent."}
+
+
+#confirm password
+curl -X POST http://127.0.0.1:8034/api/reset-password-confirm/ \
+  -H "Content-Type: application/json" \
+  -d '{
+        "key": "8-cx7r56-0202a9f0ce56c538768b85b145352afd",
+        "new_password": "NewStrongPass123!"
+      }'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+admin/
+accounts/ login/ [name='account_login']
+accounts/ logout/ [name='account_logout']
+accounts/ inactive/ [name='account_inactive']
+accounts/ signup/ [name='account_signup']
+accounts/ reauthenticate/ [name='account_reauthenticate']
+accounts/ email/ [name='account_email']
+accounts/ confirm-email/ [name='account_email_verification_sent']
+accounts/ password/change/ [name='account_change_password']
+accounts/ password/set/ [name='account_set_password']
+accounts/ password/reset/ [name='account_reset_password']
+accounts/ login/code/confirm/ [name='account_confirm_login_code']
+accounts/ ^confirm-email/(?P<key>[-:\w]+)/$ [name='account_confirm_email']
+accounts/ password/reset/key/done/ [name='account_reset_password_from_key_done']
+accounts/ ^password/reset/key/(?P<uidb36>[0-9A-Za-z]+)-(?P<key>.+)/$ [name='account_reset_password_from_key']
+accounts/ password/reset/done/ [name='account_reset_password_done']
+accounts/ 3rdparty/
+accounts/ social/login/cancelled/
+accounts/ social/login/error/
+accounts/ social/signup/
+accounts/ social/connections/
+accounts/ google/
+accounts/ google/login/token/ [name='google_login_by_token']
+[name='home']
+csrf/ [name='get_csrf']
+api/signup/ [name='signup_api']
+verify-email/<str:key>/ [name='email_confirmed']
+api/login/ [name='login_api']
+api/reset-password/ [name='reset_password_api']
+api/reset-password-confirm/ [name='reset_password_confirm_view']
+api/social-login/<str:provider>/ [name='social_login_api']
+api/token/ [name='token_obtain_pair']
+api/token/refresh/ [name='token_refresh']
+api/token/blacklist/ [name='token_blacklist']
+api/profile/ [name='profile']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+server {
+    listen 80;
+    server_name _;
+
+    # ==========================
+    # Static Files
+    # ==========================
+    location /static/ {
+        alias /app/staticfiles/;
+        access_log off;
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+    # ==========================
+    # Auth Service Endpoints
+    # ==========================
+
+    location /auth/docs {
+        proxy_pass         http://auth_web:8034/docs/;
+        include proxy_params;
+    }
+
+    location /auth/admin {
+        proxy_pass         http://auth_web:8034/admin/;
+        include proxy_params;
+    }
+
+    location /auth/register {
+        proxy_pass         http://auth_web:8034/api/signup/;
+        include proxy_params;
+    }
+
+    location /auth/login {
+        proxy_pass         http://auth_web:8034/api/login/;
+        include proxy_params;
+    }
+
+    location /auth/profile {
+        proxy_pass         http://auth_web:8034/api/profile/;
+        include proxy_params;
+    }
+
+    location /auth/logout {
+        proxy_pass         http://auth_web:8034/api/logout/;
+        include proxy_params;
+    }
+
+    location /auth/resend-activation {
+        proxy_pass         http://auth_web:8034/api/resend-activation/;
+        include proxy_params;
+    }
+
+    location /auth/verify-email {
+        proxy_pass         http://auth_web:8034/verify-email/;
+        include proxy_params;
+    }
+
+    location /auth/reset-password {
+        proxy_pass         http://auth_web:8034/api/reset-password/;
+        include proxy_params;
+    }
+
+    location /auth/reset-password-confirm {
+        proxy_pass         http://auth_web:8034/api/reset-password-confirm/;
+        include proxy_params;
+    }
+
+    location /auth/session {
+        proxy_pass         http://auth_web:8034/api/session/;
+        include proxy_params;
+    }
+
+    location /auth/social-login {
+        proxy_pass         http://auth_web:8034/api/social-login/;
+        include proxy_params;
+    }
+
+    location /auth/token {
+        proxy_pass         http://auth_web:8034/api/token/;
+        include proxy_params;
+    }
+
+    location /auth/token/refresh {
+        proxy_pass         http://auth_web:8034/api/token/refresh/;
+        include proxy_params;
+    }
+
+    location /auth/token/blacklist {
+        proxy_pass         http://auth_web:8034/api/token/blacklist/;
+        include proxy_params;
+    }
+
+    location /auth/test-auth {
+        proxy_pass         http://auth_web:8034/test-auth/;
+        include proxy_params;
+    }
+
+    # ==========================
+    # Default Catch-all
+    # ==========================
+    location /auth/ {
+        proxy_pass         http://auth_web:8034/;
+        include proxy_params;
+    }
+
+    # Proxy params
+    include /etc/nginx/proxy_params;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.google.com/url?q=http:///support/&source=gmail&ust=1760091218719000&usg=AOvVaw3gNLeCuz-8rkvduwpKAWOo
+Redirect Notice
+ The page you were on is trying to send you to an invalid URL (http:///support/).
+
+ If you do not want to visit that page, you can return to the previous page.
+
+
+
+ google login does not register user in django
+
+ the process and emails are sent correctly 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ # ----------------- RESEND ACTIVATION EMAIL -----------------
+@csrf_exempt
+def resend_activation_email(request):
+    """
+    Resend activation email using the same flow and template as the signup process.
+    POST payload: {"email": "user@example.com"}
+    """
+    if request.method != "POST":
+        return JsonResponse({"error": "POST only"}, status=405)
+
+    try:
+        data = json.loads(request.body)
+        email = data.get("email")
+        if not email:
+            return JsonResponse({"error": "Email is required"}, status=400)
+
+        # Lookup user
+        try:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist:
+            return JsonResponse({"error": "User not found"}, status=404)
+
+        # Ensure an EmailAddress exists
+        email_address, _ = EmailAddress.objects.get_or_create(
+            user=user,
+            email=email,
+            defaults={"verified": False, "primary": True}
+        )
+
+        # Already verified?
+        if email_address.verified:
+            return JsonResponse({
+                "success": True,
+                "message": "Email is already verified."
+            })
+
+        # Create a new confirmation instance
+        email_confirmation = EmailConfirmation.create(email_address)
+        email_confirmation.sent = timezone.now()
+        email_confirmation.save()
+
+        # Determine base URL from Site model or fallback to request
+        from django.contrib.sites.models import Site
+        current_site = Site.objects.get_current()
+        base_url = f"https://{current_site.domain}" if not settings.DEBUG else request.build_absolute_uri("/")[:-1]
+
+        # Build confirmation link
+        confirm_link = f"{base_url}/verify-email/{email_confirmation.key}/"
+
+        # ✅ Render the same HTML email template as signup
+        html_message = render_to_string("emails/email_verification.html", {
+            "username": user.username,
+            "confirm_link": confirm_link,
+            "success": f"Hi {user.username}, please verify your email address.",
+            "error": None,
+        })
+
+        # ✅ Send the email
+        send_mail(
+            subject="Verify Your Email — PaulKeys Tech",
+            message=f"Hi {user.username}, please verify your email here: {confirm_link}",
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[user.email],
+            html_message=html_message,
+            fail_silently=False
+        )
+
+        return JsonResponse({
+            "success": True,
+            "message": "Activation email sent successfully using signup template."
+        })
+
+    except Exception as e:
+        return JsonResponse({"error": str(e)}, status=500)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rm db.sqlite3
+
+find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+find . -path "*/migrations/*.pyc" -delete
+
+
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser 
+
+
+
+source venv/bin/activate
+cd Django-Allauth
+python -m uvicorn Django_Settings.asgi:application --reload --port 8034
+
+
+uvicorn Django_Settings.asgi:application --port 8035
+
+uvicorn Django_Settings.asgi:application --reload --port 8034
+
+python manage.py runserver 0.0.0.0:8034
+
+
+source venv/bin/activate
+cd Django-Allauth
+python3 -m auth_app.consumers.consumer
+
+
+
+source venv/bin/activate
+cd Django-Allauth
+python -m uvicorn Django_Settings.asgi:application --reload --port 8035
+
+
+
+
+source venv/bin/activate
+cd Django-Allauth
+python3 -m auth_app.consumers.auth_requests_consumer
+
+

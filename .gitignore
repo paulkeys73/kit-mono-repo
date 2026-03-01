@@ -1,0 +1,24 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Logs, Media, Static
+logs/
+media/
+static/
+
+# IDE / OS
+.vscode/
+.DS_Store

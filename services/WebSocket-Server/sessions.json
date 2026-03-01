@@ -1,0 +1,326 @@
+{
+  "sessions": {
+    "jjns7eknuvgz19o99w1g0tnzimouloxb": {
+      "session_id": "jjns7eknuvgz19o99w1g0tnzimouloxb",
+      "user_id": 3,
+      "user": {
+        "id": 3,
+        "email": "hello_jamal@mail.com",
+        "username": "jamalbinda",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "ysiz7obesf0ph9z9up02e30mvffycjg2": {
+      "session_id": "ysiz7obesf0ph9z9up02e30mvffycjg2",
+      "user_id": 4,
+      "user": {
+        "id": 4,
+        "email": "hello_jas@mail.com",
+        "username": "jasminbinda",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "pcw1zguieexb0iildo0dgk8abjlgae62": {
+      "session_id": "pcw1zguieexb0iildo0dgk8abjlgae62",
+      "user_id": 5,
+      "user": {
+        "id": 5,
+        "email": "user@example.com",
+        "username": "user",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "q9x7fzbzwq33euztyki2ey1ae21o02xl": {
+      "session_id": "q9x7fzbzwq33euztyki2ey1ae21o02xl",
+      "user_id": 6,
+      "user": {
+        "id": 6,
+        "email": "user@example.com",
+        "username": "user",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "s04ms5dk90zaucja6rykfduy1qeyuimb": {
+      "session_id": "s04ms5dk90zaucja6rykfduy1qeyuimb",
+      "user_id": 12,
+      "user": {
+        "id": 12,
+        "email": "user@example.com",
+        "username": "user",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "sa0ths9ixz5730nik49ct62foow7zpnm": {
+      "session_id": "sa0ths9ixz5730nik49ct62foow7zpnm",
+      "user_id": 17,
+      "user": {
+        "id": 17,
+        "email": "paulkeys73@gmail.com",
+        "username": "paulkeys73",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "j0hxm4gqbn8wt3lb62zlorvf1asxy8e7": {
+      "session_id": "j0hxm4gqbn8wt3lb62zlorvf1asxy8e7",
+      "user_id": 18,
+      "user": {
+        "id": 18,
+        "email": "jamal@mail.com",
+        "username": "jamal",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "eiyts0okqcemj5eauj85q7xcw1jxct7u": {
+      "session_id": "eiyts0okqcemj5eauj85q7xcw1jxct7u",
+      "user_id": 20,
+      "user": {
+        "id": 20,
+        "email": "jamal@mail.com",
+        "username": "jamal",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "58t2hcqwdzknd56r1nrjzpwmqoufi0tb": {
+      "session_id": "58t2hcqwdzknd56r1nrjzpwmqoufi0tb",
+      "user_id": 21,
+      "user": {
+        "id": 21,
+        "email": "jaslopez@gmail.com",
+        "username": "jaslopez",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "clc5hf3vow1pr8ml3jlrgrxnd5in9nqx": {
+      "session_id": "clc5hf3vow1pr8ml3jlrgrxnd5in9nqx",
+      "user_id": 22,
+      "user": {
+        "id": 22,
+        "email": "jamal@mail.com",
+        "username": "jamal",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "8ht37l6mu6gd5nrym1vivact3xmpude8": {
+      "session_id": "8ht37l6mu6gd5nrym1vivact3xmpude8",
+      "user_id": 23,
+      "user": {
+        "id": 23,
+        "email": "jaslopez@gmail.com",
+        "username": "jaslopez",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "8wcjyehahkezsw5pec58ucpss8ce4ihz": {
+      "session_id": "8wcjyehahkezsw5pec58ucpss8ce4ihz",
+      "user_id": 24,
+      "user": {
+        "id": 24,
+        "email": "jasmin@mail.com",
+        "username": "jasmin",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "fra15shlpqa3g74zq5oibobwc3xjcgz5": {
+      "session_id": "fra15shlpqa3g74zq5oibobwc3xjcgz5",
+      "user_id": 25,
+      "user": {
+        "id": 25,
+        "email": "jamal@mail.com",
+        "username": "jamal",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "yr9qyyknqmoxqxw0fokgj28xkdmprhhj": {
+      "session_id": "yr9qyyknqmoxqxw0fokgj28xkdmprhhj",
+      "user_id": 26,
+      "user": {
+        "id": 26,
+        "email": "jaslopez@gmail.com",
+        "username": "jaslopez",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "lu6s4mkni1oddwnntbtquikh49uunuun": {
+      "session_id": "lu6s4mkni1oddwnntbtquikh49uunuun",
+      "user_id": 27,
+      "user": {
+        "id": 27,
+        "email": "chad@mail.com",
+        "username": "chad",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "6nadtj2pfi01xdfj4pghdh5pqffecy4q": {
+      "session_id": "6nadtj2pfi01xdfj4pghdh5pqffecy4q",
+      "user_id": 28,
+      "user": {
+        "id": 28,
+        "email": "chiad@mail.com",
+        "username": "chiad",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "ar6bt9ob8j7cr65e63q3u8kle91o10ok": {
+      "session_id": "ar6bt9ob8j7cr65e63q3u8kle91o10ok",
+      "user_id": 29,
+      "user": {
+        "id": 29,
+        "email": "paulkeys73@gmail.com",
+        "username": "paulkeys73",
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "xx6d4p5i8p5o87m7zpt81275ftdzxg6a": {
+      "session_id": "xx6d4p5i8p5o87m7zpt81275ftdzxg6a",
+      "user_id": 45,
+      "user": {
+        "id": 45,
+        "email": null,
+        "username": null,
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "vfoo146dd9o1qx7u7bblluu408mjhje5": {
+      "session_id": "vfoo146dd9o1qx7u7bblluu408mjhje5",
+      "user_id": 1,
+      "user": {
+        "id": 1,
+        "email": null,
+        "username": null,
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    },
+    "4s9thfgo2nnwuc5nu70nfgr5y6k6swkq": {
+      "session_id": "4s9thfgo2nnwuc5nu70nfgr5y6k6swkq",
+      "user_id": 34,
+      "user": {
+        "id": 34,
+        "email": null,
+        "username": null,
+        "is_staff": false,
+        "is_superuser": false
+      },
+      "state": "active",
+      "_expires_ts": null
+    }
+  },
+  "user_sessions": {
+    "4": [
+      "ysiz7obesf0ph9z9up02e30mvffycjg2"
+    ],
+    "3": [
+      "jjns7eknuvgz19o99w1g0tnzimouloxb"
+    ],
+    "5": [
+      "pcw1zguieexb0iildo0dgk8abjlgae62"
+    ],
+    "6": [
+      "q9x7fzbzwq33euztyki2ey1ae21o02xl"
+    ],
+    "12": [
+      "s04ms5dk90zaucja6rykfduy1qeyuimb"
+    ],
+    "17": [
+      "sa0ths9ixz5730nik49ct62foow7zpnm"
+    ],
+    "18": [
+      "j0hxm4gqbn8wt3lb62zlorvf1asxy8e7"
+    ],
+    "20": [
+      "eiyts0okqcemj5eauj85q7xcw1jxct7u"
+    ],
+    "21": [
+      "58t2hcqwdzknd56r1nrjzpwmqoufi0tb"
+    ],
+    "22": [
+      "clc5hf3vow1pr8ml3jlrgrxnd5in9nqx"
+    ],
+    "23": [
+      "8ht37l6mu6gd5nrym1vivact3xmpude8"
+    ],
+    "24": [
+      "8wcjyehahkezsw5pec58ucpss8ce4ihz"
+    ],
+    "25": [
+      "fra15shlpqa3g74zq5oibobwc3xjcgz5"
+    ],
+    "26": [
+      "yr9qyyknqmoxqxw0fokgj28xkdmprhhj"
+    ],
+    "27": [
+      "lu6s4mkni1oddwnntbtquikh49uunuun"
+    ],
+    "28": [
+      "6nadtj2pfi01xdfj4pghdh5pqffecy4q"
+    ],
+    "29": [
+      "ar6bt9ob8j7cr65e63q3u8kle91o10ok"
+    ],
+    "34": [
+      "4s9thfgo2nnwuc5nu70nfgr5y6k6swkq"
+    ],
+    "45": [
+      "xx6d4p5i8p5o87m7zpt81275ftdzxg6a"
+    ],
+    "1": [
+      "vfoo146dd9o1qx7u7bblluu408mjhje5"
+    ]
+  }
+}

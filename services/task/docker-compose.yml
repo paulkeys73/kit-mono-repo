@@ -1,0 +1,19 @@
+services:
+  task-service:
+    container_name: task-service
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: task-service:latest
+    restart: unless-stopped
+    ports:
+      - "8035:8035"
+    volumes:
+      - ./db.sqlite3:/app/db.sqlite3
+    networks:
+      - db-server-net
+
+networks:
+  db-server-net:
+    external: true
+    name: db-server_default

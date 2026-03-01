@@ -1,0 +1,23 @@
+                              Table "public.support_tickets"
+   Column   |           Type           | Collation | Nullable |          Default          
+------------+--------------------------+-----------+----------+---------------------------
+ id         | uuid                     |           | not null | gen_random_uuid()
+ user_id    | bigint                   |           | not null | 
+ username   | character varying(150)   |           | not null | 
+ first_name | character varying(150)   |           |          | 
+ last_name  | character varying(150)   |           |          | 
+ email      | character varying(255)   |           | not null | 
+ subject    | character varying(255)   |           | not null | 
+ message    | text                     |           | not null | 
+ file_path  | text                     |           |          | 
+ status     | character varying(20)    |           | not null | 'open'::character varying
+ created_at | timestamp with time zone |           | not null | now()
+ updated_at | timestamp with time zone |           | not null | now()
+Indexes:
+    "support_tickets_pkey" PRIMARY KEY, btree (id)
+    "idx_support_tickets_email" btree (email)
+    "idx_support_tickets_status" btree (status)
+    "idx_support_tickets_user_id" btree (user_id)
+Referenced by:
+    TABLE "conversations" CONSTRAINT "fk_ticket" FOREIGN KEY (ticket_id) REFERENCES support_tickets(id) ON DELETE CASCADE
+

@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+requests
+python-dotenv
+pydantic-settings
+aio-pika
+pydantic[email]
+aiohttp
+watchfiles
+databases[postgresql]
+asyncpg
+sqlalchemy

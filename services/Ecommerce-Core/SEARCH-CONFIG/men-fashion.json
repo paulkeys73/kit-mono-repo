@@ -1,0 +1,25 @@
+{
+  "Men": {
+    "Fashion": [
+      { "keyword": "Adidas Samba OG Sneakers" },
+      { "keyword": "Oversized Hoodie" },
+      { "keyword": "Slim-Fit Stretch Chino Pants" },
+      { "keyword": "Henley Shirt" },
+      { "keyword": "Denim Jacket" }
+    ],
+    "Athleisure & Casual Wear": [
+      { "keyword": "Tech Fleece Sweatpants" },
+      { "keyword": "Mesh Shorts" },
+      { "keyword": "Casual Cotton T-Shirt" },
+      { "keyword": "Hoodie Sweatshirt" },
+      { "keyword": "Athleisure Joggers" }
+    ],
+    "Accessories": [
+      { "keyword": "Leather Belt with Automatic Buckle" },
+      { "keyword": "Minimalist Watch" },
+      { "keyword": "Sunglasses" },
+      { "keyword": "Classic Baseball Cap" },
+      { "keyword": "Cuban Chain Necklace" }
+    ]
+  }
+}

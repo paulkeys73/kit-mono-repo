@@ -1,0 +1,683 @@
+[
+  {
+    "name": "Color",
+    "values": [
+      "Blush Violet"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Chai",
+      "Iron",
+      "Light Heather Grey"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "2X",
+      "3X",
+      "4X",
+      "L",
+      "M",
+      "S",
+      "XL",
+      "XS",
+      "XXS"
+    ]
+  },
+  {
+    "name": "Flavor",
+    "values": [
+      "Caramel Chocolate",
+      "Coconut Chocolate",
+      "Vanilla",
+      "Vanilla Latte"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "1 Pack",
+      "2 Pack",
+      "3 Pack"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "White"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "Queen"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Army Green",
+      "Black",
+      "Grey",
+      "N/A",
+      "Orange"
+    ]
+  },
+  {
+    "name": "Style",
+    "values": [
+      "Colorush",
+      "Pro - Polarized"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "Medium/Large",
+      "Small"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Berry Good",
+      "Black",
+      "Chestnut",
+      "Cognac",
+      "Coldbrew",
+      "Grizzly",
+      "Honey",
+      "Meadow",
+      "Nutmeg",
+      "Plum"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Black",
+      "Cognac",
+      "Coldbrew",
+      "Grizzly",
+      "Honey",
+      "Meadow",
+      "Nutmeg",
+      "Plum"
+    ]
+  },
+  {
+    "name": "Maat",
+    "values": [
+      "n/a"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Beige",
+      "Black",
+      "Limited Edition Green",
+      "N/A"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "2X-Large",
+      "X-Large",
+      "X-Small"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Acid Blue",
+      "Bluestone Green",
+      "Honeycomb",
+      "New Blue",
+      "Oat White"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "Regular",
+      "Small",
+      "XL"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Agave",
+      "Cocoa",
+      "Midnight",
+      "N/A",
+      "Neptune",
+      "Sand",
+      "White"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Black",
+      "Meadow",
+      "Pebbled--Black"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "L",
+      "M",
+      "S",
+      "XL",
+      "XXL"
+    ]
+  },
+  {
+    "name": "Chain Width",
+    "values": [
+      "4MM"
+    ]
+  },
+  {
+    "name": "Chain Length",
+    "values": [
+      "16\"",
+      "18\""
+    ]
+  },
+  {
+    "name": "Material",
+    "values": [
+      "Solid Stainless Steel"
+    ]
+  },
+  {
+    "name": "Chain Width",
+    "values": [
+      "8MM"
+    ]
+  },
+  {
+    "name": "Chain Length",
+    "values": [
+      "16\""
+    ]
+  },
+  {
+    "name": "Material",
+    "values": [
+      "Solid Stainless Steel"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Black",
+      "Blue",
+      "Green",
+      "Grey",
+      "N/A",
+      "Pink",
+      "White"
+    ]
+  },
+  {
+    "name": "Colore",
+    "values": [
+      "N/A"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Bone",
+      "Charcoal Grey",
+      "Misty Blue"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "2XL",
+      "Large",
+      "Medium",
+      "Small",
+      "XL"
+    ]
+  },
+  {
+    "name": "Length",
+    "values": [
+      "Regular",
+      "Tall"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "2XLarge",
+      "3XLarge",
+      "Large",
+      "Medium",
+      "Small",
+      "XLarge"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Rose Gold",
+      "White"
+    ]
+  },
+  {
+    "name": "Plug",
+    "values": [
+      "US Plug"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "White"
+    ]
+  },
+  {
+    "name": "Pack",
+    "values": [
+      "n/a"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "2X-Large",
+      "X-Large"
+    ]
+  },
+  {
+    "name": "Supply",
+    "values": [
+      "30 Days Supply",
+      "60 Days Supply",
+      "90 Days Supply (Buy 2 Get 1 Free)"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Black/Pink (Bbp)"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "1",
+      "1.5",
+      "10.5",
+      "11",
+      "11.5",
+      "12",
+      "12.5",
+      "13",
+      "13.5",
+      "7"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "Single",
+      "Six Pack"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Brushed Gold",
+      "Brushed Steel",
+      "Jet Black",
+      "Modern Chrome",
+      "Vibrant Red"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Brushed Gold",
+      "Brushed Steel",
+      "Jet Black",
+      "Modern Chrome",
+      "Vibrant Red"
+    ]
+  },
+  {
+    "name": "Length",
+    "values": [
+      "32L",
+      "33L",
+      "34L",
+      "36L"
+    ]
+  },
+  {
+    "name": "Waist",
+    "values": [
+      "30",
+      "31",
+      "32",
+      "33",
+      "38",
+      "40",
+      "42"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "n/a"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Abyss",
+      "Blush",
+      "Carbon",
+      "Celestial",
+      "Driftwood",
+      "Ivory"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "King",
+      "Standard"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Dark Blue",
+      "Gray",
+      "Light Pink",
+      "Silver",
+      "White"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "King (20\"X36\")",
+      "Standard/Queen (20\"X28\")"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "1 FL OZ"
+    ]
+  },
+  {
+    "name": "Default Title",
+    "values": [
+      "Blue Pure Mini Max Bundle"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Bone",
+      "Chili Red",
+      "Cognac",
+      "Coldbrew",
+      "Molino Blue",
+      "Nutmeg"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "Classic",
+      "Plus"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "L",
+      "M",
+      "S",
+      "XL",
+      "XXL"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "L",
+      "M",
+      "S",
+      "XL",
+      "XXL"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "2X-Large",
+      "3X-Large",
+      "Large",
+      "Medium",
+      "X-Large"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Bear",
+      "Cloud Grey",
+      "Cotton Candy",
+      "French Vanilla",
+      "Frost",
+      "Lavender",
+      "Red Velvet",
+      "Sea Glass",
+      "Thunder"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "Large",
+      "Mega Dreamer",
+      "XL Dreamer"
+    ]
+  },
+  {
+    "name": "Style",
+    "values": [
+      "Matte Olive"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Bacalar",
+      "Calla Lily",
+      "Chocolate Brown",
+      "Coral"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Black",
+      "Cognac",
+      "Coldbrew",
+      "Cowboy Mint",
+      "Grizzly",
+      "Honey",
+      "Meadow",
+      "Nutmeg",
+      "Plum",
+      "Timber"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Forgiven - Heritage Green",
+      "Joyful - Mauve Shadows - White Print",
+      "Redeemed - Blue Flame"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "2X",
+      "L",
+      "M",
+      "S",
+      "XL",
+      "XS"
+    ]
+  },
+  {
+    "name": "Size (Unisex Oversized)",
+    "values": [
+      "Extra Large",
+      "Large",
+      "Medium",
+      "Small"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ]
+  },
+  {
+    "name": "Scent",
+    "values": [
+      "Scented",
+      "Unscented"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "2oz",
+      "n/a"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Blue Vintage Wash"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "L"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Dark Chocolate Heather"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "L",
+      "M",
+      "S",
+      "XL",
+      "XS",
+      "XXL",
+      "XXS"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Brown"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "12",
+      "14",
+      "16",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "name": "Length",
+    "values": [
+      "16\" (40cm)",
+      "18\" (45cm)",
+      "20\" (50cm)",
+      "22\" (55cm)"
+    ]
+  },
+  {
+    "name": "Material",
+    "values": [
+      "18k Gold Over Sterling Silver",
+      "18k Gold Plated",
+      "Silver Stainless Steel",
+      "Sterling Silver"
+    ]
+  },
+  {
+    "name": "Colour Options 👇",
+    "values": [
+      "Default Title"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "Sky Blue"
+    ]
+  },
+  {
+    "name": "Kids' Size",
+    "values": [
+      "EU 26",
+      "EU 27",
+      "EU 28",
+      "EU 29",
+      "EU 30",
+      "EU 31",
+      "EU 32",
+      "EU 33",
+      "EU 34",
+      "EU 35"
+    ]
+  }
+]

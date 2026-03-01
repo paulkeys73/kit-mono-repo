@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Successful</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f7f7f7; color: #333; }
+        .container { background-color: #fff; padding: 20px; margin: 20px auto; max-width: 600px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+        h1 { color: #28a745; }
+        p { line-height: 1.6; }
+        .footer { font-size: 12px; color: #888; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Successful ✅</h1>
+        <p>Hi {{customer_name}},</p>
+        <p>We have successfully received your payment of <strong>{{amount}} {{currency}}</strong> for order <strong>{{order_id}}</strong>.</p>
+        <p>You can view your transaction details in your account dashboard.</p>
+        <p>Thank you for your purchase!</p>
+        <div class="footer">
+            &copy; {{year}} Your Company. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

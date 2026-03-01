@@ -1,0 +1,153 @@
+{
+  "Men": {
+    "Fashion": [
+      "wallet",
+      "belt",
+      "watch",
+      "sunglasses",
+      "shoes",
+      "jacket",
+      "hoodie",
+      "sneakers"
+    ],
+    "Beauty & Personal Care": [
+      "beard trimmer",
+      "electric shaver",
+      "skincare",
+      "hair clipper",
+      "fragrance"
+    ],
+    "Health & Fitness": [
+      "massage gun",
+      "posture corrector",
+      "fitness tracker",
+      "resistance bands"
+    ],
+    "Accessories": [
+      "backpack",
+      "travel bag",
+      "phone holder",
+      "key organizer"
+    ]
+  },
+
+  "Women": {
+    "Fashion": [
+      "wallet",
+      "handbag",
+      "jewelry",
+      "dress",
+      "shoes",
+      "sunglasses"
+    ],
+    "Beauty & Personal Care": [
+      "skincare",
+      "facial mask",
+      "hair dryer",
+      "makeup organizer",
+      "beauty device"
+    ],
+    "Health & Wellness": [
+      "yoga mat",
+      "massage device",
+      "sleep aid"
+    ],
+    "Accessories": [
+      "tote bag",
+      "travel pouch",
+      "phone case"
+    ]
+  },
+
+  "Kids": {
+    "Toys & Games": [
+      "educational toys",
+      "puzzle",
+      "building blocks",
+      "STEM toys"
+    ],
+    "Clothing": [
+      "kids shoes",
+      "kids jacket",
+      "kids hoodie"
+    ],
+    "Health & Safety": [
+      "baby monitor",
+      "night light",
+      "child safety lock"
+    ],
+    "School": [
+      "backpack",
+      "lunch box",
+      "water bottle"
+    ]
+  },
+
+  "Tech & Gadgets": {
+    "Mobile Accessories": [
+      "phone case",
+      "wireless charger",
+      "power bank",
+      "screen protector"
+    ],
+    "Smart Devices": [
+      "smartwatch",
+      "fitness tracker",
+      "smart plug",
+      "smart bulb"
+    ],
+    "Audio": [
+      "wireless earbuds",
+      "headphones",
+      "bluetooth speaker"
+    ],
+    "Computer Accessories": [
+      "keyboard",
+      "mouse",
+      "webcam",
+      "USB hub"
+    ]
+  },
+
+  "Music": {
+    "Instruments": [
+      "guitar",
+      "keyboard",
+      "ukulele",
+      "drum pad"
+    ],
+    "Recording Gear": [
+      "microphone",
+      "audio interface",
+      "studio headphones"
+    ],
+    "Accessories": [
+      "guitar strings",
+      "instrument stand",
+      "music stand"
+    ]
+  },
+
+  "Home Wellness": {
+    "Sleep & Relaxation": [
+      "weighted blanket",
+      "white noise machine",
+      "sleep mask"
+    ],
+    "Air & Environment": [
+      "air purifier",
+      "humidifier",
+      "essential oil diffuser"
+    ],
+    "Body Care": [
+      "foot massager",
+      "neck massager",
+      "heating pad"
+    ],
+    "Fitness & Recovery": [
+      "yoga mat",
+      "foam roller",
+      "massage gun"
+    ]
+  }
+}

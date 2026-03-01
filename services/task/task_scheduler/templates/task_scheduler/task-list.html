@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Task List{% endblock %}
+
+{% block content %}
+    <h1>Task List</h1>
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <a href="{% url 'task-details' task.id %}">{{ task.title }}</a>
+                <!-- Delete option for each task -->
+                <a href="{% url 'task-delete' task.id %}" class="btn btn-danger btn-sm">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

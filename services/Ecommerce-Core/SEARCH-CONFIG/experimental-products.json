@@ -1,0 +1,89 @@
+{
+  "Men": {
+    "Fashion": [
+      { "keyword": "Smart Fabric Jacket" },
+      { "keyword": "Eco Leather Sneakers" },
+      { "keyword": "Convertible Travel Pants" }
+    ],
+    "Beauty & Personal Care": [
+      { "keyword": "Magnetic Hair Clipper" },
+      { "keyword": "Vitamin C Face Roller" },
+      { "keyword": "All-in-One Grooming Kit" }
+    ],
+    "Health & Fitness": [
+      { "keyword": "Smart Posture Sensor" },
+      { "keyword": "Portable Massage Gun Mini" },
+      { "keyword": "Resistance Band Set" }
+    ]
+  },
+
+  "Women": {
+    "Fashion": [
+      { "keyword": "Sustainable Tote Bag" },
+      { "keyword": "Athleisure Set" },
+      { "keyword": "Convertible Dress" }
+    ],
+    "Beauty & Personal Care": [
+      { "keyword": "LED Facial Cleansing Brush" },
+      { "keyword": "Hair Scalp Massager" },
+      { "keyword": "Portable Nano Mist Sprayer" }
+    ],
+    "Health & Wellness": [
+      { "keyword": "Posture Corrector Brace" },
+      { "keyword": "Foot Circulation Massager" },
+      { "keyword": "Yoga Balance Board" }
+    ]
+  },
+
+  "Kids": {
+    "Toys & Games": [
+      { "keyword": "STEM Coding Robot" },
+      { "keyword": "Eco-Friendly Puzzle" },
+      { "keyword": "Magnetic Building Set" }
+    ],
+    "Clothing": [
+      { "keyword": "LED Shoes for Kids" },
+      { "keyword": "Organic Cotton Hoodie" },
+      { "keyword": "Convertible Kids Jacket" }
+    ]
+  },
+
+  "Tech & Gadgets": {
+    "Mobile Accessories": [
+      { "keyword": "Magnetic Wireless Charger" },
+      { "keyword": "Phone Camera Lens Kit" },
+      { "keyword": "Mini Bluetooth Tracker" }
+    ],
+    "Smart Devices": [
+      { "keyword": "Smart LED Strip" },
+      { "keyword": "Smart Home Security Camera" },
+      { "keyword": "Mini Air Purifier" }
+    ]
+  },
+
+  "Music": {
+    "Instruments": [
+      { "keyword": "Foldable Guitar" },
+      { "keyword": "Portable Keyboard" },
+      { "keyword": "Mini Drum Pad" }
+    ],
+    "Recording Gear": [
+      { "keyword": "Compact USB Audio Interface" },
+      { "keyword": "Portable Condenser Microphone" },
+      { "keyword": "Noise-Cancelling Studio Headphones" }
+    ]
+  },
+
+  "Home Wellness": {
+    "Sleep & Relaxation": [
+      { "keyword": "Weighted Eye Pillow" },
+      { "keyword": "Aromatherapy Diffuser" },
+      { "keyword": "Portable White Noise Machine" }
+    ],
+    "Body Care": [
+      { "keyword": "Handheld Percussion Massager" },
+      { "keyword": "Neck & Shoulder Heating Wrap" },
+      { "keyword": "Portable Foot Spa" }
+    ]
+  }
+}

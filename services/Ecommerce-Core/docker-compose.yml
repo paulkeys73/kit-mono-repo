@@ -1,0 +1,17 @@
+services:
+  ecommerce-core:
+    container_name: ecommerce-core
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ecommerce-core:latest
+    restart: unless-stopped
+    ports:
+      - "8050:8050"
+    networks:
+      - db-server-net
+
+networks:
+  db-server-net:
+    external: true
+    name: db-server_default

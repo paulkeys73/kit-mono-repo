@@ -1,0 +1,64 @@
+{
+  "Men": {
+    "Fashion": [
+      { "keyword": "Quick Release Belt" },
+      { "keyword": "Graphic T-Shirt" },
+      { "keyword": "Sneakers" }
+    ],
+    "Beauty & Personal Care": [
+      { "keyword": "Electric Shaver" },
+      { "keyword": "Beard Trimmer" },
+      { "keyword": "Men Skincare" }
+    ],
+    "Health & Fitness": [
+      { "keyword": "Massage Gun" },
+      { "keyword": "Fitness Tracker" },
+      { "keyword": "Posture Corrector" }
+    ]
+  },
+
+  "Women": {
+    "Fashion": [
+      { "keyword": "Handbag" },
+      { "keyword": "Women wallet" },
+      { "keyword": "Graphic T-Shirt" },
+      { "keyword": "Sunglasses" }
+    ],
+    "Beauty & Personal Care": [
+      { "keyword": "Skincare Mask" },
+      { "keyword": "Facial Serum" },
+      { "keyword": "Hair Dryer" }
+    ],
+    "Health & Wellness": [
+      { "keyword": "Yoga Mat" },
+      { "keyword": "Massage Device" },
+      { "keyword": "Sleep Aid" }
+    ]
+  },
+
+  "Kids": {
+    "Toys & Games": [
+      { "keyword": "STEM Toys" },
+      { "keyword": "Educational Toys" },
+      { "keyword": "Building Blocks" }
+    ],
+    "Clothing": [
+      { "keyword": "Kids Shoes" },
+      { "keyword": "Kids Hoodie" },
+      { "keyword": "Kids Jacket" }
+    ]
+  },
+
+  "Tech & Gadgets": {
+    "Mobile Accessories": [
+      { "keyword": "Wireless Earbuds" },
+      { "keyword": "Power Bank" },
+      { "keyword": "Phone Case" }
+    ],
+    "Smart Devices": [
+      { "keyword": "Smartwatch" },
+      { "keyword": "Fitness Tracker" },
+      { "keyword": "Smart Plug" }
+    ]
+  }
+}

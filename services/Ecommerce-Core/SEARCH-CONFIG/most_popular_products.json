@@ -1,0 +1,27 @@
+{
+  "Categories": {
+    "Men": [
+      { "keyword": "The Jolie Filtered Showerhead" },
+      { "keyword": "Cuddle Cloud™ Blanket" },
+      { "keyword": "Wyze Bulb Cam" }
+    ],
+
+    "Women": [
+      { "keyword": "Silk Pillowcase" },
+      { "keyword": "Weighted Blanket" },
+      { "keyword": "LED Vanity Mirror" }
+    ],
+
+    "Kids": [
+      { "keyword": "Baby Monitor Camera" },
+      { "keyword": "Kids Night Light" },
+      { "keyword": "Educational Toy Set" }
+    ],
+
+    "Tech": [
+      { "keyword": "Smart Home Security Camera" },
+      { "keyword": "Wireless Charging Station" },
+      { "keyword": "Bluetooth Earbuds" }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Verification — PaulKeys Tech</title>
+    <style>
+        body {
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            background: #f7fafc;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(12,15,22,0.06);
+            text-align: center;
+        }
+        .title-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg,#0b72ff,#00c2ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: white;
+            font-size: 24px;
+        }
+        h1 {
+            color: #0b1220;
+            font-size: 28px;
+            margin: 0;
+        }
+        p {
+            color: #6b7280;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .success {
+            color: #16a34a;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .error {
+            color: #dc2626;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg,#0b72ff,#00c2ff);
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .footer {
+            margin-top: 24px;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-wrapper">
+            <div class="logo">PK</div>
+            <h1>Email Verification</h1>
+        </div>
+
+        {% if success %}
+            <p class="success">{{ success }}</p>
+            <a href="/login/" class="btn">Log In</a>
+        {% elif error %}
+            <p class="error">{{ error }}</p>
+            <a href="/resend-verification/" class="btn">Resend Email</a>
+        {% else %}
+            <p>Something went wrong. Please try again.</p>
+        {% endif %}
+
+        <div class="footer">
+            © PaulKeys Tech. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

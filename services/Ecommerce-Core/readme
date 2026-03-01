@@ -1,0 +1,20 @@
+python3 -m venv venv
+
+
+source venv/bin/activate
+
+uvicorn main:app --host 0.0.0.0 --port 8050 --reload
+
+curl http://localhost:8050/health
+
+
+
+
+#list all fields on table
+psql -h localhost -p 5432 -U kit -d knightindustrytech -Atc "SELECT column_name FROM information_schema.columns WHERE table_name='products' ORDER BY ordinal_position;"
+
+
+wsl
+cd /mnt/e/Ecommerce-Core/scripts/db
+
+bash reset_products_tables.sh

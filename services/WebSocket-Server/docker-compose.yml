@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  websocket-server:
+    container_name: websocket-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: websocket-server:latest
+    restart: unless-stopped
+    environment:
+      DB_WS_URL: ws://db-server:8011/ws
+      DB_DONATION_STATS_WS_URL: ws://db-server:8012/db/donation-stats/ws
+      DB_SERVER_HEALTH_WS_URL: ws://db-server:8011/ws/health
+      DB_STATS_HEALTH_WS_URL: ws://db-server:8012/ws/health
+    ports:
+      - "8009:8009"   # Main WS
+      - "8008:8008"   # Donation Stats WS
+    networks:
+      - db-server-net
+
+networks:
+  db-server-net:
+    external: true
+    name: db-server_default

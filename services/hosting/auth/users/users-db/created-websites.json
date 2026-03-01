@@ -1,0 +1,326 @@
+[
+  {
+    "timestamp": "2025-07-12T00:55:11.348535Z",
+    "domain": "chad-paul-leslie.dev.local",
+    "username": "chad-paul-leslie",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/2180",
+      "LinuxUser": "chadp9177"
+    }
+  },
+  {
+    "timestamp": "2025-07-12T01:06:31.533441Z",
+    "domain": "leslie-paul.dev.local",
+    "username": "leslie-paul",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/7519",
+      "LinuxUser": "lesli4271"
+    }
+  },
+  {
+    "timestamp": "2025-07-24T06:48:29.898399Z",
+    "domain": "paul-hostingtest.dev.local",
+    "username": "paul-hostingtest",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/6693",
+      "LinuxUser": "paulh6635"
+    }
+  },
+  {
+    "timestamp": "2025-07-24T06:51:48.912037Z",
+    "domain": "leslie-paul1.dev.local",
+    "username": "leslie-paul1",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/8627",
+      "LinuxUser": "lesli6331"
+    }
+  },
+  {
+    "timestamp": "2025-07-24T20:48:06.218336Z",
+    "domain": "jdoe.dev.local",
+    "username": "jdoe",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/9496",
+      "LinuxUser": "jdoed5123"
+    }
+  },
+  {
+    "timestamp": "2025-07-24T20:53:42.939849Z",
+    "domain": "leslie12.dev.local",
+    "username": "leslie12",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/3044",
+      "LinuxUser": "lesli3229"
+    }
+  },
+  {
+    "timestamp": "2025-07-24T21:56:12.760028Z",
+    "domain": "user1.dev.local",
+    "username": "user1",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/9218",
+      "LinuxUser": "userd6871"
+    }
+  },
+  {
+    "timestamp": "2025-07-24T22:00:09.291445Z",
+    "domain": "user2.dev.local",
+    "username": "user2",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/9517",
+      "LinuxUser": "userd9146"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T08:26:48.939289Z",
+    "domain": "user4.dev.local",
+    "username": "user4",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/1281",
+      "LinuxUser": "userd8938"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T08:52:21.352231Z",
+    "domain": "user5.dev.local",
+    "username": "user5",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/7407",
+      "LinuxUser": "userd5981"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T09:13:57.774813Z",
+    "domain": "user6.dev.local",
+    "username": "user6",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/1300",
+      "LinuxUser": "userd8912"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T09:16:39.545887Z",
+    "domain": "user7.dev.local",
+    "username": "user7",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/8552",
+      "LinuxUser": "userd9959"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T09:21:34.401063Z",
+    "domain": "user8.dev.local",
+    "username": "user8",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/2086",
+      "LinuxUser": "userd7891"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T14:32:19.036090Z",
+    "domain": "new-user.dev.local",
+    "username": "new-user",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/5277",
+      "LinuxUser": "newus6316"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T14:35:23.505934Z",
+    "domain": "user23.dev.local",
+    "username": "user23",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/3964",
+      "LinuxUser": "userd4272"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T14:37:27.351525Z",
+    "domain": "user23.dev.local",
+    "username": "user23",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/6511",
+      "LinuxUser": "userd9324"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T14:40:26.855885Z",
+    "domain": "user23.dev.local",
+    "username": "user23",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/1615",
+      "LinuxUser": "userd9760"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T14:50:53.423287Z",
+    "domain": "user23.dev.local",
+    "username": "user23",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/9975",
+      "LinuxUser": "userd1744"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T15:01:08.667119Z",
+    "domain": "new-user2.dev.local",
+    "username": "new-user2",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/4813",
+      "LinuxUser": "newus5183"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T15:11:50.773837Z",
+    "domain": "love.dev.local",
+    "username": "love",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/8283",
+      "LinuxUser": "loved2751"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T15:14:37.432206Z",
+    "domain": "newuser.dev.local",
+    "username": "newuser",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/4103",
+      "LinuxUser": "newus3034"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T15:17:56.867778Z",
+    "domain": "user21.dev.local",
+    "username": "user21",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/8528",
+      "LinuxUser": "userd1203"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T15:18:42.433513Z",
+    "domain": "user01.dev.local",
+    "username": "user01",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/4780",
+      "LinuxUser": "userd1406"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T15:28:46.396428Z",
+    "domain": "user01.dev.local",
+    "username": "user01",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/3713",
+      "LinuxUser": "userd2037"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T15:30:08.145150Z",
+    "domain": "user19.dev.local",
+    "username": "user19",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/9617",
+      "LinuxUser": "userd5042"
+    }
+  },
+  {
+    "timestamp": "2025-07-25T15:33:45.917726Z",
+    "domain": "meagain.dev.local",
+    "username": "meagain",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/8524",
+      "LinuxUser": "meaga2186"
+    }
+  },
+  {
+    "timestamp": "2025-07-27T23:30:27.474467Z",
+    "domain": "babe.dev.local",
+    "username": "babe",
+    "response": {
+      "status": 1,
+      "createWebSiteStatus": 1,
+      "error_message": "None",
+      "tempStatusPath": "/home/cyberpanel/6827",
+      "LinuxUser": "babed4667"
+    }
+  }
+]

@@ -1,0 +1,24 @@
+!.env.example
+
+# Env
+.env
+.env.*
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# IDE / OS
+.vscode/
+.DS_Store/
+
+# Django specific
+e:/auth-system/Django-Allauth/logs
+e:/auth-system/Django-Allauth/logs/media/
+e:/auth-system/Django-Allauth/logs/static/
