@@ -1,23 +1,25 @@
 services:
-  auth-service:
-    container_name: auth-service
+  db-server:
+    container_name: ${DB_SERVER_CONTAINER_NAME}
     build:
-      context: .
-      dockerfile: Dockerfile
-    image: auth-service:latest
-    restart: unless-stopped
+      context: ${DB_SERVER_BUILD_CONTEXT}
+      dockerfile: ${DB_SERVER_DOCKERFILE}
+    image: ${DB_SERVER_IMAGE}
+    restart: ${DB_SERVER_RESTART_POLICY}
     environment:
-      DB_HOST: app_postgres
-      DB_PORT: 5432
-      DB_USER: kit
-      DB_PASSWORD: admin123Pw
-      DB_NAME: knightindustrytech
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${DB_NAME}
+      DB_ENV: ${DB_ENV}
     ports:
-      - "8034:8034"
+      - "${DB_SERVER_PORT}:8011"
+      - "${DB_STATS_PORT}:8012"
     networks:
       - db-server-net
 
 networks:
   db-server-net:
-    external: true
-    name: db-server_default
+    external: ${DB_SERVER_NETWORK_EXTERNAL}
+    name: ${DB_SERVER_NETWORK_NAME}

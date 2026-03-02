@@ -1,19 +1,6 @@
 FROM python:3.11-slim
-ARG DEBIAN_FRONTEND=noninteractive
-# -----------------------------
-# Environment variables
-# -----------------------------
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-
-# -----------------------------
-# Install dependencies + Postgres client
-# -----------------------------
-RUN apt-get update && apt-get install -y --no-install-recommends \\
-    build-essential \
-    curl \
-    postgresql-client \
-    && rm -rf /var/lib/apt/lists/*
 
 # -----------------------------
 # Set working directory
@@ -43,7 +30,4 @@ RUN chmod +x /entrypoint.sh
 EXPOSE 8011
 EXPOSE 8012
 
-# -----------------------------
-# Signal-safe entrypoint
-# -----------------------------
 ENTRYPOINT ["/entrypoint.sh"]

@@ -2,4 +2,4 @@
 set -euo pipefail
 
 cd "$(dirname "$0")"
-exec bash start-auth.sh
+exec bash DB-Start.sh

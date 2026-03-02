@@ -1,23 +1,49 @@
 FROM python:3.11-slim
 ARG DEBIAN_FRONTEND=noninteractive
-ENV PYTHONUNBUFFERED=1 \
-    PYTHONDONTWRITEBYTECODE=1
+# -----------------------------
+# Environment variables
+# -----------------------------
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
-WORKDIR /app
-
+# -----------------------------
+# Install dependencies + Postgres client
+# -----------------------------
 RUN apt-get update && apt-get install -y --no-install-recommends \\
     build-essential \
     curl \
     postgresql-client \
     && rm -rf /var/lib/apt/lists/*
 
-COPY Django-Allauth/requirements.txt ./requirements.txt
+# -----------------------------
+# Set working directory
+# -----------------------------
+WORKDIR /app
+
+# -----------------------------
+# Install Python dependencies
+# -----------------------------
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY Django-Allauth/ .
+# -----------------------------
+# Copy project files
+# -----------------------------
+COPY . .
 
-RUN chmod +x entrypoint.sh
+# -----------------------------
+# Copy entrypoint and make executable
+# -----------------------------
+COPY docker/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-EXPOSE 8034
+# -----------------------------
+# Expose ports
+# -----------------------------
+EXPOSE 8011
+EXPOSE 8012
 
-ENTRYPOINT ["bash", "entrypoint.sh"]
+# -----------------------------
+# Signal-safe entrypoint
+# -----------------------------
+ENTRYPOINT ["/entrypoint.sh"]

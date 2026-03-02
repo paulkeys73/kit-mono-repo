@@ -1,0 +1,12 @@
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+# Database
+SQLAlchemy==2.0.29
+psycopg2-binary==2.9.9
+
+# Environment / config (future-proof, optional now)
+python-dotenv==1.0.1
+
+# Validation (FastAPI core dependency, pinned explicitly)
+pydantic==2.6.4
