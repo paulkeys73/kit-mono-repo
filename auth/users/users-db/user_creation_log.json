@@ -1,0 +1,254 @@
+[
+  {
+    "timestamp": "2025-07-12T00:55:06.304176Z",
+    "username": "chad-paul-leslie",
+    "email": "paulkeys73@gmail.com",
+    "domain": "chad-paul-leslie.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'chad-paul-leslie' created successfully."
+  },
+  {
+    "timestamp": "2025-07-12T01:06:27.169613Z",
+    "username": "leslie-paul",
+    "email": "paulkeys73@gmail.com",
+    "domain": "leslie-paul.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'leslie-paul' created successfully."
+  },
+  {
+    "timestamp": "2025-07-24T06:48:24.902373Z",
+    "username": "paul-hostingtest",
+    "email": "paul@local.dev",
+    "domain": "paul-hostingtest.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'paul-hostingtest' created successfully."
+  },
+  {
+    "timestamp": "2025-07-24T06:51:44.870613Z",
+    "username": "leslie-paul1",
+    "email": "paulkeys73@gmail.com",
+    "domain": "leslie-paul1.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'leslie-paul1' created successfully."
+  },
+  {
+    "timestamp": "2025-07-24T20:26:58.473810Z",
+    "username": "admin-les",
+    "email": "lesli@mail.com",
+    "domain": "admin-les.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "failed",
+    "message": "Admin session error"
+  },
+  {
+    "timestamp": "2025-07-24T20:48:02.249791Z",
+    "username": "jdoe",
+    "email": "jdoe@example.com",
+    "domain": "jdoe.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'jdoe' created successfully."
+  },
+  {
+    "timestamp": "2025-07-24T20:53:38.534656Z",
+    "username": "leslie12",
+    "email": "les2@mail.com",
+    "domain": "leslie12.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'leslie12' created successfully."
+  },
+  {
+    "timestamp": "2025-07-24T21:56:08.646260Z",
+    "username": "user1",
+    "email": "user1@mail.com",
+    "domain": "user1.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'user1' created successfully."
+  },
+  {
+    "timestamp": "2025-07-24T22:00:04.502432Z",
+    "username": "user2",
+    "email": "user2@mail.com",
+    "domain": "user2.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'user2' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T08:15:25.572271Z",
+    "username": "user23",
+    "email": "user3@mail.com",
+    "domain": "user23.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "failed",
+    "message": "Admin session error"
+  },
+  {
+    "timestamp": "2025-07-25T08:17:13.032113Z",
+    "username": "user3",
+    "email": "user3@mail.com",
+    "domain": "user3.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "failed",
+    "message": "Admin session error"
+  },
+  {
+    "timestamp": "2025-07-25T08:26:44.373359Z",
+    "username": "user4",
+    "email": "user4@mail.com",
+    "domain": "user4.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'user4' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T08:52:17.123011Z",
+    "username": "user5",
+    "email": "user5@mail.com",
+    "domain": "user5.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'user5' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T09:13:53.652886Z",
+    "username": "user6",
+    "email": "user6@mail.com",
+    "domain": "user6.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'user6' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T09:16:34.848727Z",
+    "username": "user7",
+    "email": "user7@mail.com",
+    "domain": "user7.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'user7' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T09:21:29.753869Z",
+    "username": "user8",
+    "email": "user8@mail.com",
+    "domain": "user8.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'user8' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T14:32:14.385617Z",
+    "username": "new-user",
+    "email": "newuser@mail.com",
+    "domain": "new-user.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'new-user' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T14:35:19.123671Z",
+    "username": "user23",
+    "email": "user23@mail.com",
+    "domain": "user23.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'user23' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T14:37:23.236378Z",
+    "username": "user23",
+    "email": "user23@mail.com",
+    "domain": "user23.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "failed",
+    "message": "(1062, \"Duplicate entry 'user23' for key 'userName'\")"
+  },
+  {
+    "timestamp": "2025-07-25T15:01:04.286649Z",
+    "username": "new-user2",
+    "email": "new-user@mail.com",
+    "domain": "new-user2.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'new-user2' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T15:11:46.274028Z",
+    "username": "love",
+    "email": "love@mail.com",
+    "domain": "love.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'love' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T15:14:33.118172Z",
+    "username": "newuser",
+    "email": "newuser@mail.com",
+    "domain": "newuser.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'newuser' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T15:17:52.776013Z",
+    "username": "user21",
+    "email": "user21@mail.com",
+    "domain": "user21.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'user21' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T15:18:38.470689Z",
+    "username": "user01",
+    "email": "user01@mail.com",
+    "domain": "user01.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'user01' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T15:28:42.286480Z",
+    "username": "user01",
+    "email": "user01@mail.com",
+    "domain": "user01.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "failed",
+    "message": "(1062, \"Duplicate entry 'user01' for key 'userName'\")"
+  },
+  {
+    "timestamp": "2025-07-25T15:30:03.717787Z",
+    "username": "user19",
+    "email": "user19@mail.com",
+    "domain": "user19.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'user19' created successfully."
+  },
+  {
+    "timestamp": "2025-07-25T15:33:41.703314Z",
+    "username": "meagain",
+    "email": "mail2@mail.com",
+    "domain": "meagain.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'meagain' created successfully."
+  },
+  {
+    "timestamp": "2025-07-27T23:30:22.064888Z",
+    "username": "babe",
+    "email": "bae@mail.com",
+    "domain": "babe.dev.local",
+    "package": "admin_shared-hosting",
+    "status": "success",
+    "message": "User 'babe' created successfully."
+  }
+]

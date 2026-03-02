@@ -1,0 +1,16 @@
+services:
+  hosting-onboarding:
+    container_name: hosting-onboarding
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hosting-onboarding:latest
+    restart: "no"
+    command: ["python", "main.py", "list-steps"]
+    networks:
+      - db-server-net
+
+networks:
+  db-server-net:
+    external: true
+    name: db-server_default
