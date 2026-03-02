@@ -1,0 +1,138 @@
+#!/bin/bash
+
+# ------------------------------
+# Update Static Sitemap
+# ------------------------------
+REMOTE_USER="root"
+REMOTE_HOST="23.95.208.117"
+REMOTE_PASS="admin123Pw"
+REMOTE_PATH="/home/paycc.store/public_html"
+SITEMAP_FILE="sitemap.xml"
+DATE=$(date "+%Y-%m-%d %H:%M:%S")
+LOG_FILE="$HOME/update_sitemap.log"
+
+# Accept URLs as arguments
+NEW_URLS=("$@")
+
+echo "[$DATE] Starting sitemap update..." | tee -a "$LOG_FILE"
+
+sshpass -p "$REMOTE_PASS" ssh -o StrictHostKeyChecking=no "${REMOTE_USER}@${REMOTE_HOST}" << EOF
+  cd "$REMOTE_PATH" || { echo "Directory $REMOTE_PATH not found"; exit 1; }
+
+  # Backup existing sitemap
+  if [ -f "$SITEMAP_FILE" ]; then
+    cp "$SITEMAP_FILE" "${SITEMAP_FILE}.bak.$(date +%Y%m%d%H%M%S)"
+  fi
+
+  # Start new sitemap content
+  echo '<?xml version="1.0" encoding="UTF-8"?>' > "$SITEMAP_FILE"
+  echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> "$SITEMAP_FILE"
+
+  # Add each URL
+EOF
+
+for url in "${NEW_URLS[@]}"; do
+    sshpass -p "$REMOTE_PASS" ssh -o StrictHostKeyChecking=no "${REMOTE_USER}@${REMOTE_HOST}" \
+    "echo '  <url><loc>${url}</loc><lastmod>$(date +%Y-%m-%d)</lastmod></url>' >> ${REMOTE_PATH}/${SITEMAP_FILE}"
+done
+
+sshpass -p "$REMOTE_PASS" ssh -o StrictHostKeyChecking=no "${REMOTE_USER}@${REMOTE_HOST}" \
+"echo '</urlset>' >> ${REMOTE_PATH}/${SITEMAP_FILE}"
+
+echo "[$DATE] Sitemap update finished." | tee -a "$LOG_FILE"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ------------------------------
+# Extract URLs from generated posts for sitemap
+# ------------------------------
+if [ -f "$OUTPUT_FILE" ]; then
+    echo "Parsing generated blog post URLs..."
+    POST_URLS=($(python3 - <<END
+import json
+with open("$OUTPUT_FILE", "r") as f:
+    posts = json.load(f)
+urls = [f"https://seo-post.paycc.store/{p['slug']}" for p in posts.values()]
+print(" ".join(urls))
+END
+))
+    echo "Found URLs: ${POST_URLS[*]}"
+else
+    echo "[WARN] Output file $OUTPUT_FILE not found, skipping sitemap update."
+    POST_URLS=()
+fi
+
+# ------------------------------
+# Update Sitemap.xml
+# ------------------------------
+if [ ${#POST_URLS[@]} -gt 0 ]; then
+    echo "Updating Sitemap.xml..."
+    bash "$BASE_DIR/update_sitemap.sh" "${POST_URLS[@]}"
+    echo "Sitemap.xml Updated."
+else
+    echo "No new URLs to add to sitemap."
+fi
+
+# ------------------------------
+# Run Bing Notify
+# ------------------------------
+cd "$SERVICES_DIR" || exit 1
+echo "Running bing_notify.py..."
+python bing_notify.py
+echo "Bing notify finished."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+python -m app.services.blog_content
+
+
+source venv/bin/activate
+
+
+python topic_api.py --host 0.0.0.0 --port 8787
+
+
+
+Invoke-RestMethod -Method Post -Uri "http://localhost:8787/topics" -ContentType "application/json" -Body '{"topic":"AI in e-commerce personalization"}'
