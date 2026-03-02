@@ -1,5 +1,5 @@
 FROM python:3.11-slim
-
+ARG DEBIAN_FRONTEND=noninteractive
 # -----------------------------
 # Environment variables
 # -----------------------------
@@ -9,7 +9,7 @@ ENV PYTHONUNBUFFERED=1
 # -----------------------------
 # Install dependencies + Postgres client
 # -----------------------------
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \\
     build-essential \
     curl \
     postgresql-client \

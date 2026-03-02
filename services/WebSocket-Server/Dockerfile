@@ -1,5 +1,5 @@
 FROM python:3.11-slim
-
+ARG DEBIAN_FRONTEND=noninteractive
 # Prevent Python from buffering logs
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1
@@ -7,7 +7,7 @@ ENV PYTHONUNBUFFERED=1 \
 WORKDIR /app
 
 # System deps (minimal)
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \\
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
